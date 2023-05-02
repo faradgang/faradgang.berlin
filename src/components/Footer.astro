@@ -1,0 +1,27 @@
+---
+import Hero from "./Hero.astro";
+import AlternatingContainer from "./AlternatingContainer.astro";
+
+console.log(import.meta.env.BASE_URL);
+---
+
+<footer>
+  <Hero>
+    <AlternatingContainer>
+      <div>
+        <a href={`${import.meta.env.BASE_URL}instagram`}>Instagram</a>
+      </div>
+      <div>
+        <a href={`${import.meta.env.BASE_URL}impressum`}>Impressum</a>
+        <a href={`${import.meta.env.BASE_URL}datenschutzerklaerung`}
+          >Datenschutzerklärung</a
+        >
+      </div>
+    </AlternatingContainer>
+  </Hero>
+</footer>
+<style>
+  div {
+    padding: 0 10vw;
+  }
+</style>

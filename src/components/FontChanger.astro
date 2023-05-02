@@ -1,0 +1,28 @@
+---
+import "@fontsource/dosis";
+import "@fontsource/open-sans";
+import "@fontsource/mulish";
+import "@fontsource/roboto";
+import "@fontsource/amatic-sc";
+import "@fontsource/rubik";
+
+const fonts = ["Rubik", "Dosis", "Open Sans", "Mulish", "Roboto"];
+---
+
+<script>
+  function changeFont(this: HTMLSelectElement, ev: Event) {
+    const content = document.querySelectorAll<HTMLElement>(".font-changing");
+    for (let contentElement of content) {
+      contentElement.style.fontFamily = this.value;
+    }
+  }
+
+  const selects = document.querySelectorAll("select");
+  selects.forEach((select) => {
+    select.addEventListener("change", changeFont);
+  });
+</script>
+
+<select>
+  {fonts.map((font) => <option>{font}</option>)}
+</select>

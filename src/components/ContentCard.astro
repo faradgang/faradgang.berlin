@@ -1,0 +1,56 @@
+---
+const { headline, subheadline } = Astro.props;
+---
+
+<div class="contentCard">
+  {
+    headline && (
+      <h1>
+        <span class="text-gradient">{headline}</span>
+      </h1>
+    )
+  }
+  {
+    subheadline && (
+      <h2>
+        <span class="text-gradient">{subheadline}</span>
+      </h2>
+    )
+  }
+
+  <div class="font-changing text-content">
+    <slot />
+  </div>
+</div>
+
+<style>
+  h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 18vw;
+    line-height: 80%;
+    display: block;
+  }
+
+  h2 {
+    margin: 0;
+    padding: 0;
+    /* font-size: 72px; */
+    font-size: 4.8vw;
+    line-height: 80%;
+  }
+
+  .contentCard {
+    line-height: 1.6;
+    margin: 2rem 0rem 3rem 0rem;
+    padding: 0;
+  }
+
+  .contentCard strong {
+    color: rgb(var(--accent));
+  }
+
+  .text-content {
+    padding: 1rem 0;
+  }
+</style>

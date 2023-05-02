@@ -1,0 +1,18 @@
+---
+import Svg from "@jasikpark/astro-svg-loader";
+---
+
+<div class="hero">
+  <slot />
+</div>
+
+<style>
+  .hero {
+    background-image: var(--accent-gradient);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+  }
+</style>
