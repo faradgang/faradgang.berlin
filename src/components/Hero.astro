@@ -1,8 +1,9 @@
 ---
-import Svg from "@jasikpark/astro-svg-loader";
+const { isLanding } = Astro.props;
+const heroClassnames = `hero ${isLanding ? "landing" : ""}`;
 ---
 
-<div class="hero">
+<div class={heroClassnames}>
   <slot />
 </div>
 
@@ -14,5 +15,9 @@ import Svg from "@jasikpark/astro-svg-loader";
     justify-content: center;
     align-items: center;
     min-height: 30vh;
+  }
+
+  .landing {
+    min-height: 90vh;
   }
 </style>

@@ -10,7 +10,7 @@ import ContentContainer from "../components/ContentContainer.astro";
 
 <Layout title="Faradgang Berlin e.V.">
   <FloatingButton text="Helfen" href={`${import.meta.env.BASE_URL}helfen`} />
-  <Hero>
+  <Hero isLanding={true}>
     <Svg
       src={import("../assets/faradgang_logo_big.svg?raw")}
       aria-label="A childishly drawn bicycle"
