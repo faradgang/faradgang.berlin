@@ -17,7 +17,20 @@ const heroClassnames = `hero ${isLanding ? "landing" : ""}`;
     min-height: 30vh;
   }
 
+  /* https://csshero.org/mesher/ */
   .landing {
     min-height: 90vh;
+    background-color: #ff99e0;
+    background-image: radial-gradient(
+        at 81% 95%,
+        hsla(191, 99%, 73%, 1) 0px,
+        transparent 50%
+      ),
+      radial-gradient(at 36% 80%, hsla(27, 90%, 72%, 1) 0px, transparent 50%),
+      radial-gradient(at 21% 48%, hsla(187, 71%, 66%, 1) 0px, transparent 50%),
+      radial-gradient(at 65% 71%, hsla(153, 64%, 73%, 1) 0px, transparent 50%),
+      radial-gradient(at 16% 16%, hsla(258, 74%, 63%, 1) 0px, transparent 50%),
+      radial-gradient(at 4% 52%, hsla(120, 95%, 67%, 1) 0px, transparent 50%),
+      radial-gradient(at 18% 39%, hsla(6, 84%, 63%, 1) 0px, transparent 50%);
   }
 </style>
