@@ -8,18 +8,14 @@ const heroClassnames = `hero ${isLanding ? "landing" : ""}`;
 </div>
 
 <style>
+  /* background gradient from https://csshero.org/mesher/ */
+
   .hero {
-    background-image: var(--accent-gradient);
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 30vh;
-  }
-
-  /* https://csshero.org/mesher/ */
-  .landing {
-    min-height: 90vh;
     background-color: #ff99e0;
     background-image: radial-gradient(
         at 81% 95%,
@@ -32,5 +28,9 @@ const heroClassnames = `hero ${isLanding ? "landing" : ""}`;
       radial-gradient(at 16% 16%, hsla(258, 74%, 63%, 1) 0px, transparent 50%),
       radial-gradient(at 4% 52%, hsla(120, 95%, 67%, 1) 0px, transparent 50%),
       radial-gradient(at 18% 39%, hsla(6, 84%, 63%, 1) 0px, transparent 50%);
+  }
+
+  .landing {
+    min-height: 90vh;
   }
 </style>
