@@ -12,7 +12,7 @@
   "dependencies": {
     "@fontsource/amatic-sc": "^4.5.9",
     "@fontsource/dosis": "^4.5.11",
-    "@fontsource/mulish": "^4.5.14",
+    "@fontsource/mulish": "^5.0.0",
     "@fontsource/open-sans": "^4.5.14",
     "@fontsource/roboto": "^4.5.8",
     "@fontsource/rubik": "^4.5.14",
