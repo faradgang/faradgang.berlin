@@ -10,7 +10,7 @@
     "eslint": "eslint 'src/**/*.{js,astro}'"
   },
   "dependencies": {
-    "@fontsource/amatic-sc": "^4.5.9",
+    "@fontsource/amatic-sc": "^5.0.0",
     "@fontsource/dosis": "^4.5.11",
     "@fontsource/mulish": "^4.5.14",
     "@fontsource/open-sans": "^4.5.14",
