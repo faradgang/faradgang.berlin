@@ -7,7 +7,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "eslint": "eslint 'src/**/*.{js,astro}'"
+    "eslint": "eslint 'src/**/*.{js,astro}'",
+    "deploy": "./deploy.sh"
   },
   "dependencies": {
     "@fontsource/amatic-sc": "^4.5.9",
