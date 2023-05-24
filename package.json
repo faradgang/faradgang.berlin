@@ -11,7 +11,7 @@
     "deploy": "./deploy.sh"
   },
   "dependencies": {
-    "@fontsource/amatic-sc": "^4.5.9",
+    "@fontsource/amatic-sc": "^5.0.1",
     "@fontsource/dosis": "^4.5.11",
     "@fontsource/mulish": "^4.5.14",
     "@fontsource/open-sans": "^4.5.14",
