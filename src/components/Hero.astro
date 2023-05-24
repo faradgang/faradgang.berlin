@@ -3,13 +3,65 @@ const { isLanding } = Astro.props;
 const heroClassnames = `hero ${isLanding ? "landing" : ""}`;
 ---
 
+<script>
+  const updateIntervalMS = 20;
+  const maxDistancePerUpdate = 0.03;
+
+  interface RadialPoint {
+    x: number;
+    y: number;
+    color: string;
+  }
+  const hero = document.querySelectorAll<HTMLElement>(".hero")[0];
+
+  /* background gradient from https://csshero.org/mesher/ */
+  let points: RadialPoint[] = [
+    { x: 20, y: 30, color: "rgb(207, 161, 224)" },
+    { x: 36, y: 80, color: "hsla(27, 90%, 72%, 1)" },
+    { x: 21, y: 48, color: "hsla(187, 71%, 66%, 1)" },
+    { x: 65, y: 71, color: "hsla(153, 64%, 73%, 1)" },
+    { x: 16, y: 16, color: "hsla(258, 74%, 63%, 1) " },
+    { x: 4, y: 52, color: "hsla(120, 95%, 67%, 1)" },
+    { x: 18, y: 39, color: "hsla(6, 84%, 63%, 1)" },
+  ];
+
+  function randomizeRadialPoints(points: RadialPoint[]) {
+    for (const point of points) {
+      point.x *= randomFactor();
+      point.y *= randomFactor();
+    }
+    return points;
+  }
+
+  function radialGradient(point: RadialPoint) {
+    return `radial-gradient(at ${point.x}% ${point.y}%, ${point.color} 0px, transparent 50%)`;
+  }
+
+  function makeGradient() {
+    const pointStrings = points.map((point) => radialGradient(point));
+    return pointStrings.join(", ");
+  }
+
+  function randomFactor() {
+    return 1 + (Math.random() - 0.5) * maxDistancePerUpdate;
+  }
+
+  function setGradienOnHero() {
+    hero.style.backgroundImage = makeGradient();
+  }
+
+  setGradienOnHero();
+  setInterval(function () {
+    points = randomizeRadialPoints(points);
+    setGradienOnHero();
+  }, updateIntervalMS);
+</script>
+
 <div class={heroClassnames}>
   <slot />
 </div>
 
 <style>
-  /* background gradient from https://csshero.org/mesher/ */
-
   .hero {
     width: 100%;
     display: flex;
@@ -17,17 +69,6 @@ const heroClassnames = `hero ${isLanding ? "landing" : ""}`;
     align-items: center;
     min-height: 30vh;
     background-color: #ff99e0;
-    background-image: radial-gradient(
-        at 81% 95%,
-        hsla(191, 99%, 73%, 1) 0px,
-        transparent 50%
-      ),
-      radial-gradient(at 36% 80%, hsla(27, 90%, 72%, 1) 0px, transparent 50%),
-      radial-gradient(at 21% 48%, hsla(187, 71%, 66%, 1) 0px, transparent 50%),
-      radial-gradient(at 65% 71%, hsla(153, 64%, 73%, 1) 0px, transparent 50%),
-      radial-gradient(at 16% 16%, hsla(258, 74%, 63%, 1) 0px, transparent 50%),
-      radial-gradient(at 4% 52%, hsla(120, 95%, 67%, 1) 0px, transparent 50%),
-      radial-gradient(at 18% 39%, hsla(6, 84%, 63%, 1) 0px, transparent 50%);
   }
 
   .landing {
