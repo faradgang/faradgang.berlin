@@ -16,7 +16,7 @@
     "@fontsource/mulish": "^4.5.14",
     "@fontsource/open-sans": "^4.5.14",
     "@fontsource/roboto": "^4.5.8",
-    "@fontsource/rubik": "^4.5.14",
+    "@fontsource/rubik": "^5.0.1",
     "astro": "^2.5.0"
   },
   "devDependencies": {
