@@ -1,15 +1,19 @@
 ---
 import Hero from "./Hero.astro";
 import "@fontsource/rubik/latin-700.css";
+const BUILD_TIME = new Date().toLocaleString("de-DE", {
+  seconds: "numeric",
+  year: "numeric",
+  month: "short",
+  day: "numeric",
+});
 ---
 
 <footer>
   <Hero>
     <ul role="list">
       <li>
-        <a href="https://www.instagram.com/faradgang.berlin/" target="_blank"
-          >Instagram</a
-        >
+        Stand: {BUILD_TIME}
       </li>
       <li>
         <a href={`${import.meta.env.BASE_URL}impressum`}>Impressum</a>
