@@ -1,5 +1,6 @@
 ---
 import "@fontsource/rubik/latin-400.css";
+import "@fontsource/rubik/latin-700.css";
 import Footer from "../components/Footer.astro";
 import Themes from "astro-themes";
 
@@ -64,15 +65,41 @@ const { title } = Astro.props;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        font-size: calc(15px + 0.390625vw);
+        font-size: calc(14px + 0.5vw);
+        line-height: 1.6;
       }
 
-      .text-gradient {
+      .gradient-headlines > h1,
+      .gradient-headlines > h2,
+      .gradient-headlines > h3 {
         background-image: var(--accent-gradient);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-size: 100%;
         background-position: 0%;
+      }
+
+      a {
+        color: var(--background-color);
+      }
+
+      h1 {
+        margin: 4vh 0 2vh;
+        padding: 0;
+        font-size: calc(3rem + 3vw);
+        line-height: 80%;
+        display: block;
+        font-family: "Rubik";
+        font-weight: 700;
+      }
+
+      h2 {
+        margin: 4vh 0 2vh;
+        padding: 0;
+        font-size: calc(1.5rem + 1.5vw);
+        line-height: 80%;
+        font-family: "Rubik";
+        font-weight: 700;
       }
     </style>
   </body>
