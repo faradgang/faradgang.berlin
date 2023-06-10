@@ -8,7 +8,7 @@
     "preview": "astro preview",
     "astro": "astro",
     "eslint": "eslint 'src/**/*.{js,astro}'",
-    "deploy": "source .env && npm run build && scp -r $SOURCE $REMOTE_USER@$REMOTE_HOST:$TARGET"
+    "deploy": "source .env && npm run build && scp -prq $SOURCE/. $REMOTE_USER@$REMOTE_HOST:$TARGET"
   },
   "dependencies": {
     "@fontsource/amatic-sc": "^5.0.3",
