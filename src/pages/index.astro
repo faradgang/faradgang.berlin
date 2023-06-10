@@ -19,7 +19,7 @@ import ContentContainer from "../components/ContentContainer.astro";
   </Hero>
   <ContentContainer>
     <AlternatingContainer>
-      <ContentCard headline="Wer" subheadline="wir sind">
+      <ContentCard headline="Wer wir sind">
         <p>
           Faradgang Berlin e.V. ist eine ehrenamtlich tätige Organisation, die
           bedürftigen Menschen durch Mobilität ein Stück Selbstbestimmtheit,
@@ -45,7 +45,7 @@ import ContentContainer from "../components/ContentContainer.astro";
         />
       </ContentCard>
 
-      <ContentCard headline="Was" subheadline="wir machen">
+      <ContentCard headline="Was wir machen">
         <p>
           Wir unterstützen Menschen, die beispielsweise aus finanziellen,
           sozialen, gesundheitlichen oder politischen Gründen auf Hilfe
@@ -70,6 +70,14 @@ import ContentContainer from "../components/ContentContainer.astro";
           Interaktion, Austausch und gemeinsames Lernen schaffen, sowie die
           Erfahrung von Selbstwirksamkeit ermöglichen.
         </p>
+        <p>
+          Du oder jemand den du kennst benötigt ein Fahrrad? Kontaktiere uns
+          unter <strong>info@faradgang.berlin</strong>!
+        </p>
+        <p>
+          Hinweis: Beachte bitte, dass es nicht selten eine Wartezeit von
+          mehreren Wochen gibt.
+        </p>
         <Svg
           src={import("../assets/backlight.svg?raw")}
           aria-label="Sketch of a bicycle backlight"
@@ -92,16 +100,18 @@ import ContentContainer from "../components/ContentContainer.astro";
       <ContentCard subheadline="Selbsthilfe Werkstatt">
         <p>
           Freitags zwischen 16:00 und 19:00 Uhr könnt ihr in unserer offene
-          Werkstatt unter Aufsicht euer eigenes Fahrrad repariere. Wir stellen
-          dabei Werkzeuge und einige Ersatzteile zu Verfügung, auch Fragen
-          beantworten wir gerne. Hinweis: Die Werkstatt befindet sich auf dem
-          Gelände der <a
+          Werkstatt euer eigenes Fahrrad repariere. Wir stellen dabei Werkzeuge
+          und einige Ersatzteile zu Verfügung, auch Fragen beantworten wir
+          gerne.
+        </p>
+        <p>
+          Die Werkstatt befindet sich auf dem Gelände der <a
             href="https://www.openstreetmap.org/node/9187753963#map=19/52.46946/13.42950"
             target="_blank"
             rel="noopener noreferrer"
           >
             Jacobi Prinzessinengärten</a
-          > und findet bei gutem Wetter draußen statt.
+          > und ist selbstverständlich ohne Wartezeit allen zugänglich.
         </p>
         <Svg
           src={import("../assets/dynamo.svg?raw")}
@@ -113,11 +123,13 @@ import ContentContainer from "../components/ContentContainer.astro";
         />
       </ContentCard>
 
-      <ContentCard headline="Wen" subheadline="wir erreichen möchten">
+      <ContentCard headline="Wen wir erreichen möchten">
         <p>
-          Grundsätzlich sind bei uns <strong>alle</strong> willkommen. Wir verstehen
-          uns aber in erster Linie unterstützungsbedürftigen Personen verbunden,
-          wie beispielsweise Menschen mit
+          Grundsätzlich sind bei uns <strong>alle</strong> willkommen. Aus Zeit und
+          Ressourcenmangel konzentrieren wir uns im Projekt <strong
+            >Räder Für Alle</strong
+          >
+          auf unterstützungsbedürftigen Personen, wie beispielsweise Menschen mit:
           <ul>
             <li>Fluchterfahrung</li>
             <li>
@@ -128,6 +140,9 @@ import ContentContainer from "../components/ContentContainer.astro";
             <li>Erwerbslosigkeit oder geringem Einkommen</li>
             <li>unsicheren Wohnverhältnissen</li>
           </ul>
+
+          Die offene Werkstatt ist selbstverständlich ohne Wartezeit allen
+          zugänglich.
         </p>
 
         <Svg
@@ -141,11 +156,6 @@ import ContentContainer from "../components/ContentContainer.astro";
       </ContentCard>
     </AlternatingContainer>
     <ContentCard>
-      <p>
-        Du oder jemand den du kennst benötigt ein Fahrrad? Kontaktiere uns unter <strong
-          >info@faradgang.berlin</strong
-        >
-      </p>
       <p>
         Du möchtest uns unterstützen, entweder durch Spenden, Sachleistungen
         oder Zeit? Klicke <a href={`${import.meta.env.BASE_URL}helfen`}>hier</a>
