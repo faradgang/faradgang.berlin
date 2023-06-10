@@ -1,0 +1,35 @@
+---
+import Svg from "@jasikpark/astro-svg-loader";
+const onSVG = import("./on.svg?raw");
+const offSVG = import("./off.svg?raw");
+---
+
+<script>
+    const getThemeString = () =>
+        document.documentElement.attributes.getNamedItem("data-theme")?.value;
+
+    const themeButton = document.getElementById("ToggleButton");
+    themeButton?.addEventListener("click", () => {
+        const newTheme = getThemeString() == "dark" ? "light" : "dark";
+        document.dispatchEvent(
+            new CustomEvent("set-theme", { detail: newTheme })
+        );
+    });
+</script>
+
+<button id="ToggleButton">
+    <Svg
+        src={offSVG}
+        aria-label="Toggle dark/light theme"
+        width="35px"
+        height="35px"
+    />
+</button>
+
+<style>
+    button {
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+        cursor: pointer;
+    }
+</style>

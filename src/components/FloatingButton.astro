@@ -1,5 +1,5 @@
 ---
-import FontChanger from "../components/FontChanger.astro";
+import FontChanger from "./FontChanger.astro";
 
 export interface Props {
   text: string;
@@ -9,29 +9,12 @@ export interface Props {
 const { href, text } = Astro.props;
 ---
 
-<script>
-  const getThemeString = () =>
-    document.documentElement.attributes.getNamedItem("data-theme")?.value;
-
-  const themeButton = document.getElementById("ToggleButton");
-  themeButton?.addEventListener("click", () => {
-    document.dispatchEvent(
-      new CustomEvent("set-theme", {
-        detail: getThemeString() == "dark" ? "light" : "dark",
-      })
-    );
-  });
-</script>
-
 <div class="floating_menu">
   <ul role="list">
     <li>
       <a href={href}>
         <button class="floating_button">{text}</button>
       </a>
-    </li>
-    <li>
-      <button id="ToggleButton">Toggle Theme</button>
     </li>
     <li>
       <FontChanger />

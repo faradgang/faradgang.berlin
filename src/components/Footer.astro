@@ -1,5 +1,6 @@
 ---
 import Hero from "./Hero.astro";
+import ThemeSwitchButton from "./ThemeSwitcher/ThemeSwitchButton.astro";
 import "@fontsource/rubik/latin-700.css";
 const BUILD_TIME = new Date().toLocaleString("de-DE", {
   seconds: "numeric",
@@ -12,9 +13,7 @@ const BUILD_TIME = new Date().toLocaleString("de-DE", {
 <footer>
   <Hero>
     <ul role="list">
-      <li>
-        Stand: {BUILD_TIME}
-      </li>
+      <li><ThemeSwitchButton /></li>
       <li>
         <a href={`${import.meta.env.BASE_URL}impressum`}>Impressum</a>
       </li>
@@ -22,6 +21,9 @@ const BUILD_TIME = new Date().toLocaleString("de-DE", {
         <a href={`${import.meta.env.BASE_URL}datenschutzerklaerung`}>
           Datenschutzerklärung
         </a>
+      </li>
+      <li>
+        Stand: {BUILD_TIME}
       </li>
     </ul>
   </Hero>
