@@ -19,7 +19,8 @@ import ContentContainer from "../components/ContentContainer.astro";
   </Hero>
   <ContentContainer>
     <AlternatingContainer>
-      <ContentCard headline="Wer wir sind">
+      <ContentCard>
+        <h1 slot="header">Wer wir sind</h1>
         <p>
           Faradgang Berlin e.V. ist eine ehrenamtlich tätige Organisation, die
           bedürftigen Menschen durch Mobilität ein Stück Selbstbestimmtheit,
@@ -31,7 +32,7 @@ import ContentContainer from "../components/ContentContainer.astro";
           aria-label="Sketch of a bicycle wheel"
           width="14vw"
           height="auto"
-          slot="before-headline"
+          slot="header"
           style="float: right;padding-right: 0vw;"
         />
 
@@ -40,12 +41,13 @@ import ContentContainer from "../components/ContentContainer.astro";
           aria-label="Sketch of a bicycle bell"
           width="4vw"
           height="auto"
-          slot="before-headline"
+          slot="header"
           style="float: right;padding-right: 13vw;padding-top:7vw;"
         />
       </ContentCard>
 
-      <ContentCard headline="Was wir machen">
+      <ContentCard>
+        <h1 slot="header">Was wir machen</h1>
         <p>
           Wir unterstützen Menschen, die beispielsweise aus finanziellen,
           sozialen, gesundheitlichen oder politischen Gründen auf Hilfe
@@ -59,11 +61,12 @@ import ContentContainer from "../components/ContentContainer.astro";
           width="18vw"
           height="auto"
           style="float: left;margin-top:2vw; margin-left: 4vw;"
-          slot="before-headline"
+          slot="header"
         />
       </ContentCard>
 
-      <ContentCard subheadline="Räder Für Alle (RäFA)">
+      <ContentCard>
+        <h2 slot="header">Räder Für Alle (RäFA)</h2>
         <p>
           Wir sammeln gespendete Fahrräder und übergeben diese nach gemeinsamer
           Reparatur an unsere Gäst:innen. Wir möchten dabei einen Raum für
@@ -84,7 +87,7 @@ import ContentContainer from "../components/ContentContainer.astro";
           width="4vw"
           height="auto"
           style="float: right; margin-top: 3rem;"
-          slot="before-headline"
+          slot="header"
         />
 
         <Svg
@@ -93,11 +96,12 @@ import ContentContainer from "../components/ContentContainer.astro";
           width="5vw"
           height="auto"
           style="float: right;margin-top:6rem; margin-right: 8vw;"
-          slot="before-headline"
+          slot="header"
         />
       </ContentCard>
 
-      <ContentCard subheadline="Selbsthilfe Werkstatt">
+      <ContentCard>
+        <h2 slot="header">Selbsthilfe Werkstatt</h2>
         <p>
           Freitags zwischen 16:00 und 19:00 Uhr könnt ihr in unserer offene
           Werkstatt euer eigenes Fahrrad repariere. Wir stellen dabei Werkzeuge
@@ -119,11 +123,12 @@ import ContentContainer from "../components/ContentContainer.astro";
           width="5vw"
           height="auto"
           style="float: left;padding-left: 8vw;"
-          slot="before-headline"
+          slot="header"
         />
       </ContentCard>
 
-      <ContentCard headline="Wen wir erreichen möchten">
+      <ContentCard>
+        <h1 slot="header">Wen wir erreichen möchten</h1>
         <p>
           Grundsätzlich sind bei uns <strong>alle</strong> willkommen. Aus Zeit und
           Ressourcenmangel konzentrieren wir uns im Projekt <strong
@@ -151,7 +156,7 @@ import ContentContainer from "../components/ContentContainer.astro";
           width="8vw"
           height="auto"
           style="float: right; margin-right: 9vw; margin-top: 8vw"
-          slot="before-headline"
+          slot="header"
         />
       </ContentCard>
     </AlternatingContainer>

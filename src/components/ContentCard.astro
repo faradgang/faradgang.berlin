@@ -1,13 +1,5 @@
----
-const { headline, subheadline } = Astro.props;
-import "@fontsource/rubik/latin-700.css";
----
-
 <div class="contentCard gradient-headlines">
-  <slot name="before-headline" />
-  {headline && <h1>{headline}</h1>}
-  {subheadline && <h2>{subheadline} </h2>}
-
+  <slot name="header" />
   <div class="font-changing text-content">
     <slot />
   </div>
