@@ -20,7 +20,13 @@ import ContentContainer from "../components/ContentContainer.astro";
   </Hero>
   <ContentContainer>
     <AlternatingContainer>
-      <ContentCard headline="Was" subheadline="wir machen">
+      <ContentCard headline="Wer" subheadline="wir sind">
+        <p>
+          Faradgang Berlin e.V. ist eine ehrenamtlich tätige Organisation, die
+          bedürftigen Menschen durch Mobilität ein Stück Selbstbestimmtheit,
+          Freiheit und Lebensqualität ermöglichen möchte.
+        </p>
+
         <Svg
           src={import("../assets/wheel.svg?raw")}
           aria-label="Sketch of a bicycle wheel"
@@ -38,32 +44,32 @@ import ContentContainer from "../components/ContentContainer.astro";
           slot="before-headline"
           style="float: right;padding-right: 13vw;padding-top:7vw;"
         />
-
-        <p>
-          Wir möchten durch Mobilität ein Stück Selbstbestimmtheit, Freiheit und
-          Lebensqualität an andere weitergeben. Dieses Ziel verwirklichen wir
-          gemeinsam mit anderen in verschiedenen Projekten.
-        </p>
       </ContentCard>
 
-      <ContentCard subheadline="Räder Für Alle">
+      <ContentCard headline="Was" subheadline="wir machen">
         <p>
-          Wir reparieren gemeinsam mit bedürftige Menschen gespendete Fahrräder.
+          Wir unterstützen Menschen, die beispielsweise aus finanziellen,
+          sozialen, gesundheitlichen oder politischen Gründen auf Hilfe
+          angewiesen sind. Neben unregelmäßigen Aktionstagen geschieht dies
+          hauptsächlich im Rahmen von zwei Events:
         </p>
+
         <Svg
-          src={import("../assets/dynamo.svg?raw")}
-          aria-label="Sketch of a bicycle dynamo"
-          width="5vw"
+          src={import("../assets/cart.svg?raw")}
+          aria-label="Sketch of a bicycle cart"
+          width="18vw"
           height="auto"
-          style="float: left;padding-left: 8vw;"
+          style="float: left;margin-top:2vw; margin-left: 4vw;"
           slot="before-headline"
         />
       </ContentCard>
 
-      <ContentCard subheadline="Selbsthilfe Werkstatt">
+      <ContentCard subheadline="Räder Für Alle (RäFA)">
         <p>
-          Jeden Freitag betreuen wir eine offene Werkstatt in den
-          Prinzessinengärten, bei der alle eingeladen..
+          Wir sammeln gespendete Fahrräder und übergeben diese nach gemeinsamer
+          Reparatur an unsere Gäst:innen. Wir möchten dabei einen Raum für
+          Interaktion, Austausch und gemeinsames Lernen schaffen, sowie die
+          Erfahrung von Selbstwirksamkeit ermöglichen.
         </p>
         <Svg
           src={import("../assets/backlight.svg?raw")}
@@ -79,29 +85,42 @@ import ContentContainer from "../components/ContentContainer.astro";
           aria-label="Sketch of a bicycle pedal"
           width="5vw"
           height="auto"
-          style="float: right;margin-top:2rem; margin-right: 8vw;"
+          style="float: right;margin-top:6rem; margin-right: 8vw;"
+          slot="before-headline"
+        />
+      </ContentCard>
+
+      <ContentCard subheadline="Selbsthilfe Werkstatt">
+        <p>
+          Jeden Freitag betreuen wir eine offene Werkstatt in den
+          Prinzessinengärten, bei der alle eingeladen..
+        </p>
+        <Svg
+          src={import("../assets/dynamo.svg?raw")}
+          aria-label="Sketch of a bicycle dynamo"
+          width="5vw"
+          height="auto"
+          style="float: left;padding-left: 8vw;"
           slot="before-headline"
         />
       </ContentCard>
 
       <ContentCard headline="Wen" subheadline="wir erreichen möchten">
         <p>
-          Jeden Freitag betreuen wir eine offene Werkstatt in den
-          Prinzessinengärten, bei der alle eingeladen..
+          Grundsätzlich sind bei uns <strong>alle</strong> willkommen. Wir verstehen
+          uns aber in erster Linie unterstützungsbedürftigen Personen verbunden,
+          wie beispielsweise Menschen mit
+          <ul>
+            <li>Fluchterfahrung</li>
+            <li>
+              Diskriminierungserfahrung aus politischen, rassistischen,
+              religiösen oder sozialen Gründen
+            </li>
+            <li>körperlichen und/oder geistigen Beeinträchtigungen</li>
+            <li>Erwerbslosigkeit oder geringem Einkommen</li>
+            <li>unsicheren Wohnverhältnissen</li>
+          </ul>
         </p>
-
-        <Svg
-          src={import("../assets/cart.svg?raw")}
-          aria-label="Sketch of a bicycle cart"
-          width="18vw"
-          height="auto"
-          style="float: left;margin-top:2vw; margin-left: 4vw;"
-          slot="before-headline"
-        />
-      </ContentCard>
-
-      <ContentCard headline="Wer" subheadline="wir sind">
-        <p>Faradgang Berlin e.V. ist ein gemeinnütziger Verein</p>
 
         <Svg
           src={import("../assets/brakes.svg?raw")}
@@ -113,5 +132,17 @@ import ContentContainer from "../components/ContentContainer.astro";
         />
       </ContentCard>
     </AlternatingContainer>
+    <ContentCard>
+      <p>
+        Du oder jemand den du kennst benötigt ein Fahrrad? Kontaktiere uns unter <strong
+          >info@faradgang.berlin</strong
+        >
+      </p>
+      <p>
+        Du möchtest uns unterstützen, entweder durch Spenden, Sachleistungen
+        oder Zeit? Klicke <a href={`${import.meta.env.BASE_URL}helfen`}>hier</a>
+        oder auf den großen gelben Button oben rechts
+      </p>
+    </ContentCard>
   </ContentContainer>
 </Layout>
