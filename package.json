@@ -11,17 +11,17 @@
     "deploy": "source .env && npm run build && scp -prq $SOURCE/. $REMOTE_USER@$REMOTE_HOST:$TARGET"
   },
   "dependencies": {
-    "@fontsource/amatic-sc": "^5.0.3",
-    "@fontsource/dosis": "^5.0.3",
-    "@fontsource/mulish": "^5.0.3",
-    "@fontsource/open-sans": "^5.0.3",
-    "@fontsource/roboto": "^5.0.3",
-    "@fontsource/rubik": "^5.0.3",
-    "astro": "^2.7.3"
+    "@fontsource/amatic-sc": "^5.0.4",
+    "@fontsource/dosis": "^5.0.4",
+    "@fontsource/mulish": "^5.0.4",
+    "@fontsource/open-sans": "^5.0.4",
+    "@fontsource/roboto": "^5.0.4",
+    "@fontsource/rubik": "^5.0.4",
+    "astro": "^2.7.4"
   },
   "devDependencies": {
     "@jasikpark/astro-svg-loader": "^0.1.0",
-    "@typescript-eslint/parser": "^5.60.1",
+    "@typescript-eslint/parser": "^5.61.0",
     "astro-themes": "^0.2.4",
     "eslint": "^8.44.0",
     "eslint-plugin-astro": "^0.27.2",
