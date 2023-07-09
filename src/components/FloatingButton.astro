@@ -8,29 +8,29 @@ const { href, text } = Astro.props;
 ---
 
 <div class="floating_menu">
-      <a href={href}>
-        <button class="floating_button">{text}</button>
-      </a>
+  <a href={href}>
+    <button class="floating_button">{text}</button>
+  </a>
 </div>
 
 <style>
   .floating_menu {
     position: fixed;
     top: 40px;
-    right: 5rem;
+    right: 10vw;
   }
 
   .floating_button {
     background-color: rgb(255, 251, 5);
     color: #000;
-    width: 120px;
-    height: 120px;
-    border-radius: 60px;
+    width: calc(8rem + 3vw);
+    height: calc(8rem + 3vw);
+    border-radius: calc((8rem + 3vw) * 2);
     font-size: 2rem;
     text-align: center;
     font-weight: bold;
     rotate: 15deg;
-    border: 1px solid black;
+    border: 2px solid black;
     transition: 0.1s ease-in;
     box-shadow: 2px 2px 3px #383838;
   }
