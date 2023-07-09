@@ -7,6 +7,14 @@ const offSVG = import("./off.svg?raw");
 <script>
     const getThemeString = () =>
         document.documentElement.attributes.getNamedItem("data-theme")?.value;
+    function setIcon() {
+        const [visible, hidden] =
+            getThemeString() == "dark"
+                ? ["iconOn", "iconOff"]
+                : ["iconOff", "iconOn"];
+        document.getElementById(visible)!.style.display = "inline";
+        document.getElementById(hidden)!.style.display = "none";
+    }
 
     const themeButton = document.getElementById("ToggleButton");
     themeButton?.addEventListener("click", () => {
@@ -14,15 +22,27 @@ const offSVG = import("./off.svg?raw");
         document.dispatchEvent(
             new CustomEvent("set-theme", { detail: newTheme })
         );
+        setIcon();
     });
+    setIcon();
 </script>
 
-<button id="ToggleButton">
+<button id="ToggleButton" style="width: 30px;">
     <Svg
         src={offSVG}
         aria-label="Toggle dark/light theme"
-        width="35px"
-        height="35px"
+        width="auto"
+        height="30px"
+        id="iconOff"
+        style="left:0px;position:relative"
+    />
+    <Svg
+        src={onSVG}
+        aria-label="Toggle dark/light theme"
+        width="auto"
+        height="30px"
+        id="iconOn"
+        style="left:0px;position:relative"
     />
 </button>
 
