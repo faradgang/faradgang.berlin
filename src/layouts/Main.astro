@@ -1,0 +1,134 @@
+---
+import Layout from "./Layout.astro";
+import Svg from "@jasikpark/astro-svg-loader";
+import FloatingButton from "../components/FloatingButton.astro";
+import AlternatingContainer from "../components/AlternatingContainer.astro";
+import Hero from "../components/Hero.astro";
+import ContentCard from "../components/ContentCard.astro";
+import ContentContainer from "../components/ContentContainer.astro";
+
+import type { MarkdownLayoutProps } from "astro";
+
+type Props = MarkdownLayoutProps<{
+  linkTarget: string;
+  linkText: string;
+  title: string;
+  language: string;
+  gradientHeadlines?: boolean;
+}>;
+const { frontmatter, compiledContent, headings } = Astro.props;
+let content = compiledContent();
+
+const splitByHeadings = content.split(/(?=\n<h)/);
+const contentWithoutHeadings = splitByHeadings.map((content) =>
+  content.split(/(?=\d>\n)/)[1].slice(3)
+);
+---
+
+<script>
+  const target = document.getElementById("scrollingBackground");
+  const { scrollingElement } = document;
+
+  function scrollBackground(scrollingElement: Element, target: HTMLElement) {
+    target.style.marginTop = `${-0.2 * scrollingElement.scrollTop}px`;
+  }
+
+  if (target && scrollingElement) {
+    document.body.onscroll = () => scrollBackground(scrollingElement, target);
+    scrollBackground(scrollingElement, target);
+  }
+</script>
+
+<Layout title={frontmatter.title}>
+  <FloatingButton text={frontmatter.linkText} href={frontmatter.linkTarget} />
+  <Hero isLanding={true}>
+    <Svg
+      src={import("../assets/faradgang_logo_big.svg?raw")}
+      aria-label="A childishly drawn bicycle"
+      height="80%"
+    />
+  </Hero>
+
+  <ContentContainer>
+    <div id="scrollingBackground">
+      <Svg
+        src={import("../assets/wheel.svg?raw")}
+        aria-label="Sketch of a bicycle wheel"
+        width="calc(5rem + 6vw)"
+        style="position:absolute;left:83%;top:7rem"
+      />
+      <Svg
+        src={import("../assets/bell.svg?raw")}
+        aria-label="Sketch of a bicycle bell"
+        width="calc(2rem + 6vw)"
+        style="position:absolute;left:65%;top:25rem"
+      />
+      <Svg
+        src={import("../assets/cart.svg?raw")}
+        aria-label="Sketch of a bicycle cart"
+        width="calc(8rem + 6vw)"
+        style="position:absolute;left:5%;top:32rem"
+      />
+      <Svg
+        src={import("../assets/backlight.svg?raw")}
+        aria-label="Sketch of a bicycle backlight"
+        width="calc(2rem + 6vw)"
+        style="position:absolute;left:74%;top:62rem"
+      />
+      <Svg
+        src={import("../assets/pedal.svg?raw")}
+        aria-label="Sketch of a bicycle pedal"
+        width="calc(8rem + 6vw)"
+        style="position:absolute;left:85%;top:70rem"
+      />
+      <Svg
+        src={import("../assets/dynamo.svg?raw")}
+        aria-label="Sketch of a bicycle dynamo"
+        width="calc(2rem + 6vw)"
+        style="position:absolute;left:5%;top:100rem"
+      />
+      <Svg
+        src={import("../assets/brakes.svg?raw")}
+        aria-label="Sketch of bicycle brakes"
+        width="calc(5rem + 6vw)"
+        height="auto"
+        style="position:absolute;left:75%;top:150rem"
+      />
+    </div>
+    <AlternatingContainer>
+      {
+        contentWithoutHeadings.map((content, idx) => (
+          <ContentCard>
+            {headings[idx].depth === 1 ? (
+              <h1 slot="header" id={headings[idx].slug}>
+                {headings[idx].text}
+              </h1>
+            ) : (
+              <h2 slot="header" id={headings[idx].slug}>
+                {headings[idx].text}
+              </h2>
+            )}
+            <div set:html={content} />
+          </ContentCard>
+        ))
+      }
+    </AlternatingContainer>
+    <ContentCard>
+      <p>
+        Du möchtest uns unterstützen, entweder durch Spenden, Sachleistungen
+        oder Zeit? Klicke <a href={`${import.meta.env.BASE_URL}helfen`}>hier</a>
+        oder auf den großen gelben Button oben rechts
+      </p>
+    </ContentCard>
+  </ContentContainer>
+</Layout>
+
+<style>
+  #scrollingBackground {
+    position: absolute;
+    z-index: -1;
+    color: darkgray;
+    width: 100%;
+    left: 0;
+  }
+</style>

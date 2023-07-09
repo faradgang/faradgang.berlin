@@ -1,18 +1,18 @@
 ---
-layout: ../layouts/Subpage.astro
-title: Helfen
+layout: ../../layouts/Subpage.astro
+title: Helping Out
 gradientHeadlines: true
 ---
 
-Du kannst Fahrräder, Fahrradteile, Geld oder deine Zeit spenden und unterstützt damit unsere Projektarbeit! ♥️
+You can donate bicycles, bicycle parts, money or your time and thus support our project work! ♥️
 
-## Mitmachen
+## Participate
 
-Über Unterstützung beim Schrauben freuen wir uns immer! Schickt uns am besten eine kurze Email an mitmachen@faradgang.berlin.
+We are always happy about support! It is best to send us a short email to mitmachen@faradgang.berlin.
 
-## Fahrrad (Teile)
+## Bike (parts)
 
-Unsere Arbeit wäre nicht möglich ohne die großzügige Spende von Fahrrädern und Anbauteilen. Schickt uns dazu eine kurze Email an spenden@faradgang.berlin, idealerweise mit Foto und Standort. Je nach Menge und Verfügbarkeit kommen wir auch zur Abholung vorbei. Eine Sachspendenquittung für Unternehmen können wir auch ausstellen.
+Our work would not be possible without the generous donation of bicycles and attachments. Send us a short email to spender@faradgang.berlin, ideally with a photo and location. Depending on the quantity and availability, we can also come by for collection. We can also issue a receipt for donations in kind for companies.
 
 ## Spenden
 

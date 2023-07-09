@@ -1,5 +1,5 @@
 ---
-layout: ../layouts/Subpage.astro
+layout: ../../layouts/Subpage.astro
 title: Impressum
 ---
 
