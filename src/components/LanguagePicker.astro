@@ -1,0 +1,27 @@
+---
+import { ui, type Language } from "../i18n/ui";
+import { useTranslations } from "../i18n/utils";
+---
+
+<ul>
+  {
+    Object.keys(ui).map((lang) => (
+      <li>
+        <a href={`/${lang}`}>{useTranslations(lang as Language)("name")}</a>
+      </li>
+    ))
+  }
+</ul>
+
+<style>
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+  }
+  li {
+    padding: 0 10px;
+    display: inline-block;
+  }
+</style>
