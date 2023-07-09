@@ -1,6 +1,4 @@
 ---
-import FontChanger from "./FontChanger.astro";
-
 export interface Props {
   text: string;
   href: string;
@@ -10,16 +8,9 @@ const { href, text } = Astro.props;
 ---
 
 <div class="floating_menu">
-  <ul role="list">
-    <li>
       <a href={href}>
         <button class="floating_button">{text}</button>
       </a>
-    </li>
-    <li>
-      <FontChanger />
-    </li>
-  </ul>
 </div>
 
 <style>
