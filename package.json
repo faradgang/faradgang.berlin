@@ -17,7 +17,7 @@
     "@fontsource/open-sans": "^5.0.4",
     "@fontsource/roboto": "^5.0.5",
     "@fontsource/rubik": "^5.0.5",
-    "astro": "^2.7.4"
+    "astro": "^2.8.0"
   },
   "devDependencies": {
     "@jasikpark/astro-svg-loader": "^0.1.0",
