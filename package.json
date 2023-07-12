@@ -7,7 +7,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "eslint": "eslint 'src/**/*.{js,astro}'",
+    "typecheck": "astro check && tsc --noEmit",
+    "eslint": "eslint 'src/**/*.{ts,astro}'",
     "deploy": "source .env && npm run build && scp -prq $SOURCE/. $REMOTE_USER@$REMOTE_HOST:$TARGET"
   },
   "dependencies": {
@@ -21,10 +22,15 @@
   },
   "devDependencies": {
     "@jasikpark/astro-svg-loader": "^0.1.0",
-    "@typescript-eslint/parser": "^5.61.0",
+    "@typescript-eslint/parser": "^6.0.0",
     "astro-themes": "^0.2.4",
     "eslint": "^8.44.0",
     "eslint-plugin-astro": "^0.27.2",
     "eslint-plugin-jsx-a11y": "^6.7.1"
+  },
+  "eslintConfig": {
+    "extends": [
+      "plugin:astro/recommended"
+    ]
   }
 }
