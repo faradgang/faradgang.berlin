@@ -10,7 +10,7 @@ const fonts = ["Rubik", "Dosis", "Open Sans", "Mulish", "Roboto"];
 ---
 
 <script>
-  function changeFont(this: HTMLSelectElement, ev: Event) {
+  function changeFont(this: HTMLSelectElement) {
     const content = document.querySelectorAll<HTMLElement>(".font-changing");
     for (let contentElement of content) {
       contentElement.style.fontFamily = this.value;
