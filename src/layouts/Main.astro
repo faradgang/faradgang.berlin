@@ -30,7 +30,7 @@ const contentWithoutHeadings = splitByHeadings.map((content) =>
   const { scrollingElement } = document;
 
   function scrollBackground(scrollingElement: Element, target: HTMLElement) {
-    target.style.marginTop = `${-0.2 * scrollingElement.scrollTop}px`;
+    target.style.top = `${-0.2 * scrollingElement.scrollTop}px`;
   }
 
   if (target && scrollingElement) {
@@ -55,13 +55,13 @@ const contentWithoutHeadings = splitByHeadings.map((content) =>
         src={import("../assets/wheel.svg?raw")}
         aria-label="Sketch of a bicycle wheel"
         width="calc(5rem + 6vw)"
-        style="position:absolute;left:83%;top:7rem"
+        style="position:absolute;right:0%;top:7rem"
       />
       <Svg
         src={import("../assets/bell.svg?raw")}
         aria-label="Sketch of a bicycle bell"
         width="calc(2rem + 6vw)"
-        style="position:absolute;left:65%;top:25rem"
+        style="position:absolute;right:15%;top:25rem"
       />
       <Svg
         src={import("../assets/cart.svg?raw")}
@@ -73,13 +73,13 @@ const contentWithoutHeadings = splitByHeadings.map((content) =>
         src={import("../assets/backlight.svg?raw")}
         aria-label="Sketch of a bicycle backlight"
         width="calc(2rem + 6vw)"
-        style="position:absolute;left:74%;top:62rem"
+        style="position:absolute;right:5%;top:62rem"
       />
       <Svg
         src={import("../assets/pedal.svg?raw")}
         aria-label="Sketch of a bicycle pedal"
         width="calc(8rem + 6vw)"
-        style="position:absolute;left:85%;top:70rem"
+        style="position:absolute;right:0%;top:75rem"
       />
       <Svg
         src={import("../assets/dynamo.svg?raw")}
@@ -92,7 +92,7 @@ const contentWithoutHeadings = splitByHeadings.map((content) =>
         aria-label="Sketch of bicycle brakes"
         width="calc(5rem + 6vw)"
         height="auto"
-        style="position:absolute;left:75%;top:150rem"
+        style="position:absolute;right:0%;top:150rem"
       />
     </div>
     <AlternatingContainer>
@@ -125,7 +125,7 @@ const contentWithoutHeadings = splitByHeadings.map((content) =>
 
 <style>
   #scrollingBackground {
-    position: absolute;
+    position: relative;
     z-index: -1;
     color: darkgray;
     width: 100%;
