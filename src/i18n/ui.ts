@@ -18,5 +18,6 @@ export const ui = {
 } as const;
 
 export type Language = keyof typeof ui;
+export const languages = Object.keys(ui) as Array<Language>;
 
 export const defaultLang = "de" satisfies Language;

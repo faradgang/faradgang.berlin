@@ -1,13 +1,13 @@
 ---
-import { ui, type Language } from "../i18n/ui";
+import { languages } from "../i18n/ui";
 import { useTranslations } from "../i18n/utils";
 ---
 
 <ul>
   {
-    Object.keys(ui).map((lang) => (
+    languages.map((lang) => (
       <li>
-        <a href={`/${lang}`}>{useTranslations(lang as Language)("name")}</a>
+        <a href={`/${lang}`}>{useTranslations(lang)("name")}</a>
       </li>
     ))
   }
