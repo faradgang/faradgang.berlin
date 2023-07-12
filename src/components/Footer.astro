@@ -5,17 +5,23 @@ import "@fontsource/rubik/latin-700.css";
 
 import LanguagePicker from "../components/LanguagePicker.astro";
 import { getLangFromUrl, useTranslations, localizedUrl } from "../i18n/utils";
+import { languages } from "../i18n/ui";
 const language = getLangFromUrl(Astro.url);
 const translations = useTranslations(language);
 const imprintUrl = localizedUrl("imprint", language);
 const privacyUrl = localizedUrl("privacy-policy", language);
 
-const BUILD_TIME = new Date().toLocaleString("de-DE", {
-  seconds: "numeric",
-  year: "numeric",
-  month: "short",
-  day: "numeric",
-});
+const date = new Date();
+const BuildTimes = Object.fromEntries(
+  languages.map((language) => [
+    language,
+    date.toLocaleTimeString(language, {
+      year: "numeric",
+      month: "short",
+      day: "numeric",
+    }),
+  ])
+);
 ---
 
 <footer>
@@ -34,7 +40,7 @@ const BUILD_TIME = new Date().toLocaleString("de-DE", {
         <li><ThemeSwitchButton /></li>
       </ul>
       <ul>
-        <li>{translations("lastUpdate")}: {BUILD_TIME}</li>
+        <li>{translations("lastUpdate")}: {BuildTimes[language]}</li>
       </ul>
     </div>
   </Hero>
