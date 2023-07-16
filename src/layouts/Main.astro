@@ -21,7 +21,7 @@ let content = compiledContent();
 
 const splitByHeadings = content.split(/(?=\n<h)/);
 const contentWithoutHeadings = splitByHeadings.map((content) =>
-  content.split(/(?=\d>\n)/)[1].slice(3)
+  content.split(/(?=\d>\n)/)[1].slice(3),
 );
 ---
 
@@ -113,13 +113,6 @@ const contentWithoutHeadings = splitByHeadings.map((content) =>
         ))
       }
     </AlternatingContainer>
-    <ContentCard>
-      <p>
-        Du möchtest uns unterstützen, entweder durch Spenden, Sachleistungen
-        oder Zeit? Klicke <a href={`${import.meta.env.BASE_URL}helfen`}>hier</a>
-        oder auf den großen gelben Button oben rechts
-      </p>
-    </ContentCard>
   </ContentContainer>
 </Layout>
 
