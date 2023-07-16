@@ -4,20 +4,20 @@ title: Helping Out
 gradientHeadlines: true
 ---
 
-You can donate bicycles, bicycle parts, money or your time and thus support our project work! ♥️
+You can donate bicycles, bicycle parts, money, or your time to support our projects! ♥️
 
-## Participate
+## Get Involved
 
-We are always happy about support! It is best to send us a short email to mitmachen@faradgang.berlin.
+We always appreciate assistance with bike repairs! Please send us a short email to mitmachen@faradgang.berlin.
 
-## Bike (parts)
+## Bicycle (Parts) Donations
 
-Our work would not be possible without the generous donation of bicycles and attachments. Send us a short email to spender@faradgang.berlin, ideally with a photo and location. Depending on the quantity and availability, we can also come by for collection. We can also issue a receipt for donations in kind for companies.
+Our work wouldn't be possible without generous donations of bicycles and bike components. To donate, please send us a brief email to spenden@faradgang.berlin, ideally with a photo and location details. Depending on the quantity and availability, we may also arrange a pick-up. We can provide donation receipts for companies.
 
-## Spenden
+## Financial Donations
 
-Faradgang Berlin e.V. ist als gemeinnützige Organisation von der Körperschaftssteuer befreit, daher sind Spenden an uns steuerlich absetzbar.
+Faradgang Berlin e.V. is a registered non-profit organization and donations to us are tax-deductible.
 
-Beträge **unter 200 Euro** können ohne Spendenquittung beim Finanzamt eingereicht werden, es genügt der Überweisungsbeleg. Zusätzlich kannst du unseren [vereinfachten Zuwendungsnachweis](.) runterladen. kann.
+For amounts **under 200 Euros**, you can submit the bank transfer receipt as proof of donation to the tax office without an official donation receipt. Additionally, you can download our [simplified donation receipt form](.) (available in German).
 
-Bei Spenden **über 200 Euro** senden wir dir gerne eine Spendenbescheinigung (Zuwendungsbescheinigung) zu, dafür brauchen wir allerdings deine Kontaktdaten. Gib dazu entweder deine vollständige Adresse als Überweisungsbetreff an oder schick uns eine Email an spende@faradgang.berlin mit Betreff 'Spendenbescheinigung'.
+For donations **over 200 Euros**, we are happy to issue an official donation receipt (Zuwendungsbescheinigung), but would require your full contact details. Please either include your complete address as the payment reference or send us an email to spende@faradgang.berlin with the subject line "Donation Receipt Request".

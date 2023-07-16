@@ -4,20 +4,20 @@ title: Helfen
 gradientHeadlines: true
 ---
 
-Du kannst Fahrräder, Fahrradteile, Geld oder deine Zeit spenden und unterstützt damit unsere Projektarbeit! ♥️
+Du kannst Fahrräder, Fahrradteile, Geld oder deine Zeit spenden und damit unsere Projekte unterstützen! ♥️
 
 ## Mitmachen
 
-Über Unterstützung beim Schrauben freuen wir uns immer! Schickt uns am besten eine kurze Email an mitmachen@faradgang.berlin.
+Wir freuen uns immer über Unterstützung beim Schrauben! Schicke uns am besten eine kurze E-Mail an mitmachen@faradgang.berlin.
 
-## Fahrrad (Teile)
+## Fahrrad (Teile) spenden
 
-Unsere Arbeit wäre nicht möglich ohne die großzügige Spende von Fahrrädern und Anbauteilen. Schickt uns dazu eine kurze Email an spenden@faradgang.berlin, idealerweise mit Foto und Standort. Je nach Menge und Verfügbarkeit kommen wir auch zur Abholung vorbei. Eine Sachspendenquittung für Unternehmen können wir auch ausstellen.
+Unsere Arbeit wäre ohne großzügige Spenden von Fahrrädern und Fahrradteilen nicht möglich. Schicke uns dazu bitte eine kurze E-Mail an spenden@faradgang.berlin, idealerweise mit Foto und Standortangabe. Je nach Menge und Verfügbarkeit kommen wir auch gerne zur Abholung vorbei. Für Unternehmen können wir auch Sachspendenquittungen ausstellen.
 
-## Spenden
+## Geldspenden
 
-Faradgang Berlin e.V. ist als gemeinnützige Organisation von der Körperschaftssteuer befreit, daher sind Spenden an uns steuerlich absetzbar.
+Faradgang Berlin e.V. ist als gemeinnützige Organisation von der Körperschaftssteuer befreit. Spenden an uns sind daher steuerlich absetzbar.
 
-Beträge **unter 200 Euro** können ohne Spendenquittung beim Finanzamt eingereicht werden, es genügt der Überweisungsbeleg. Zusätzlich kannst du unseren [vereinfachten Zuwendungsnachweis](.) runterladen. kann.
+Beträge **unter 200 Euro** können ohne Spendenquittung beim Finanzamt eingereicht werden. Es genügt der Überweisungsbeleg. Du kannst auch unseren [vereinfachten Zuwendungsnachweis](.) herunterladen.
 
-Bei Spenden **über 200 Euro** senden wir dir gerne eine Spendenbescheinigung (Zuwendungsbescheinigung) zu, dafür brauchen wir allerdings deine Kontaktdaten. Gib dazu entweder deine vollständige Adresse als Überweisungsbetreff an oder schick uns eine Email an spende@faradgang.berlin mit Betreff 'Spendenbescheinigung'.
+Für Spenden **über 200 Euro** senden wir dir gerne eine Spendenbescheinigung (Zuwendungsbescheinigung) zu. Dafür benötigen wir jedoch deine Kontaktdaten. Bitte gib entweder deine vollständige Adresse im Verwendungszweck der Überweisung an oder schicke uns eine E-Mail an spende@faradgang.berlin mit dem Betreff "Spendenbescheinigung".

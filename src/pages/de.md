@@ -30,7 +30,7 @@ Die Werkstatt befindet sich auf dem Gelände der <a href="https://www.openstreet
 
 # Wen wir erreichen möchten
 
-Grundsätzlich sind bei uns <strong>alle</strong> willkommen. Aufgrund von begrenzter Zeit und Ressourcen konzentrieren wir uns im Projekt <strong> Räder Für Alle</strong> jedoch auf besonders unterstützungsbedürftige Personen wie:
+Bei uns sind <strong>alle</strong> willkommen. Aufgrund von begrenzter Zeit und Ressourcen konzentrieren wir uns im Projekt <strong>Räder Für Alle</strong> jedoch auf besonders unterstützungsbedürftige Personen wie:
 
 - Menschen mit Fluchterfahrung
 - Menschen, die Diskriminierung aufgrund politischer, rassistischer, religiöser oder sozialer Gründe erfahren haben
