@@ -45,9 +45,11 @@ Unser(e) Hoster wird bzw. werden Ihre Daten nur insoweit verarbeiten, wie dies z
 
 Wir setzen folgende(n) Hoster ein:
 
-Musterhosting AG  
-Musterweg 100  
-90210 Musterstadt
+```
+netcup GmbH
+Daimlerstraße 25
+D-76185 Karlsruhe
+```
 
 #### Auftragsverarbeitung
 
@@ -67,12 +69,10 @@ Wir weisen darauf hin, dass die Datenübertragung im Internet (z. B. bei der Ko
 
 Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:
 
-Beispielfirma  
-Musterweg 10  
-90210 Musterstadt
-
-Telefon: +49 (0) 123 44 55 66  
-E-Mail: info@beispielfirma.de
+```
+Christoph Hohnerlein
+admin@faradgang.berlin
+```
 
 Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z. B. Namen, E-Mail-Adressen o. Ä.) entscheidet.
 
