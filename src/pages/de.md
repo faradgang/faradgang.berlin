@@ -8,39 +8,38 @@ gradientHeadlines: true
 language: de
 ---
 
-# Wer wir Sind
+# Wer wir sind
 
-Faradgang Berlin e.V. ist eine ehrenamtlich tätige Organisation, die bedürftigen Menschen durch Mobilität ein Stück Selbstbestimmtheit, Freiheit und Lebensqualität ermöglichen möchte.
+Faradgang Berlin e.V. ist eine gemeinnützige Organisation, die ehrenamtlich tätig ist und bedürftigen Menschen durch Mobilität ein Stück Selbstbestimmung, Freiheit und Lebensqualität ermöglichen möchte.
 
-# Was wir machen
+# Was wir tun
 
-Wir unterstützen Menschen, die beispielsweise aus finanziellen, sozialen, gesundheitlichen oder politischen Gründen auf Hilfe angewiesen sind. Neben unregelmäßigen Aktionstagen geschieht dies hauptsächlich im Rahmen von zwei Events:
+Wir unterstützen Menschen, die aufgrund finanzieller, sozialer, gesundheitlicher oder politischer Umstände auf Hilfe angewiesen sind. Neben Aktionstagen organisieren wir zwei regelmäßige Veranstaltungen:
 
 ## Räder Für Alle (RäFA)
 
-Wir sammeln gespendete Fahrräder und übergeben diese nach gemeinsamer Reparatur an unsere Gäst:innen. Wir möchten dabei einen Raum für Interaktion, Austausch und gemeinsames Lernen schaffen, sowie die Erfahrung von Selbstwirksamkeit ermöglichen.
+Wir sammeln gespendete Fahrräder und übergeben sie nach gemeinsamer Reparatur an unsere Gäste. Dabei schaffen wir einen Raum für Interaktion, Austausch und gemeinsames Lernen und ermöglichen die Erfahrung von Selbstwirksamkeit.
 
-Du oder jemand den du kennst benötigt ein Fahrrad? Kontaktiere uns unter <strong>info@faradgang.berlin</strong>!
-
-Hinweis: Beachte bitte, dass es nicht selten eine Wartezeit von mehreren Wochen gibt.
+Benötigst du oder jemand, den du kennst, ein Fahrrad? Kontaktiere uns unter <strong>info@faradgang.berlin</strong>! (Hinweis: Bitte beachte, dass es zu einer Wartezeit von mehreren Wochen kommen kann.)
 
 ## Selbsthilfe Werkstatt
 
-Freitags zwischen 16:00 und 19:00 Uhr könnt ihr in unserer offene Werkstatt euer eigenes Fahrrad repariere. Wir stellen dabei Werkzeuge und einige Ersatzteile zu Verfügung, auch Fragen beantworten wir gerne.
+Jeden Freitag kannst du ab 16 Uhr in unserer offenen Werkstatt dein eigenes Fahrrad reparieren. Wir stehen dir mit Werkzeugen, einigen Ersatzteile sowie Rat und Tat zur Seite.
 
-Die Werkstatt befindet sich auf dem Gelände der <a href="https://www.openstreetmap.org/node/9187753963#map=19/52.46946/13.42950" target="\_blank" rel="noopener noreferrer"> Jacobi Prinzessinengärten</a> und ist selbstverständlich ohne Wartezeit allen zugänglich.
+Die Werkstatt befindet sich auf dem Gelände der <a href="https://www.openstreetmap.org/node/9187753963#map=19/52.46946/13.42950" target="\_blank" rel="noopener noreferrer"> Jacobi Prinzessinengärten</a> und findet meistens bei guten Wetter statt.
 
 # Wen wir erreichen möchten
 
-Grundsätzlich sind bei uns <strong>alle</strong> willkommen. Aus Zeit und Ressourcenmangel konzentrieren wir uns im Projekt <strong> Räder Für Alle</strong > auf unterstützungsbedürftigen Personen, wie beispielsweise Menschen mit:
+Grundsätzlich sind bei uns <strong>alle</strong> willkommen. Aufgrund von begrenzter Zeit und Ressourcen konzentrieren wir uns im Projekt <strong> Räder Für Alle</strong> jedoch auf besonders unterstützungsbedürftige Personen wie:
 
-- Fluchterfahrung
-- Diskriminierungserfahrung aus politischen, rassistischen,
-  religiösen oder sozialen Gründen
-- körperlichen und/oder geistigen Beeinträchtigungen
-- Erwerbslosigkeit oder geringem Einkommen
-- unsicheren Wohnverhältnissen
+- Menschen mit Fluchterfahrung
+- Menschen, die Diskriminierung aufgrund politischer, rassistischer, religiöser oder sozialer Gründe erfahren haben
+- Menschen mit körperlichen und/oder geistigen Beeinträchtigungen
+- Menschen ohne Erwerbstätigkeit oder mit geringem Einkommen
+- Menschen in unsicheren Wohnverhältnissen
 
-Die offene Werkstatt ist selbstverständlich ohne Wartezeit allen zugänglich.
+Die offene Werkstatt steht selbstverständlich immer allen zur Verfügung.
 
-Du möchtest uns unterstützen, entweder durch Spenden, Sachleistungen oder Zeit? Klicke <a href="/helfen">hier</a> oder auf den großen gelben Button oben rechts
+# Helfen
+
+Klicke auf den großen gelben Button oben rechts um Herauszufinden wie du uns durch Spenden, Sachleistungen oder deine Zeit unterstützen kannst.
