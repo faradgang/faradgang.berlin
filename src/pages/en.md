@@ -1,8 +1,5 @@
 ---
 layout: ../layouts/Index.astro
-title: "Faradgang Berlin e.V."
-linkTarget: "/en/help"
-linkText: "Help"
 ---
 
 # Who We Are

@@ -1,11 +1,5 @@
 ---
 layout: ../layouts/Index.astro
-
-title: "Faradgang Berlin e.V."
-linkTarget: "/de/help"
-linkText: "Helfen"
-gradientHeadlines: true
-language: de
 ---
 
 # Wer wir sind

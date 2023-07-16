@@ -8,18 +8,15 @@ import ContentCard from "../components/ContentCard.astro";
 import ContentContainer from "../components/ContentContainer.astro";
 
 import type { MarkdownLayoutProps } from "astro";
+import { getLangFromUrl, useTranslations, localizedUrl } from "../i18n/utils";
 
-type Props = MarkdownLayoutProps<{
-  linkTarget: string;
-  linkText: string;
-  title: string;
-  language: string;
-  gradientHeadlines?: boolean;
-}>;
-const { frontmatter, compiledContent, headings } = Astro.props;
-let content = compiledContent();
+const language = getLangFromUrl(Astro.url);
+const translations = useTranslations(language);
+const helpUrl = localizedUrl("help", language);
 
-const splitByHeadings = content.split(/(?=\n<h)/);
+const { compiledContent, headings } = Astro.props as MarkdownLayoutProps<{}>;
+
+const splitByHeadings = compiledContent().split(/(?=\n<h)/);
 const contentWithoutHeadings = splitByHeadings.map((content) =>
   content.split(/(?=\d>\n)/)[1].slice(3),
 );
@@ -39,8 +36,8 @@ const contentWithoutHeadings = splitByHeadings.map((content) =>
   }
 </script>
 
-<Layout title={frontmatter.title}>
-  <FloatingButton text={frontmatter.linkText} href={frontmatter.linkTarget} />
+<Layout title="Faradgang Berlin e.V.">
+  <FloatingButton text={translations("nav.help")} href={helpUrl} />
   <Hero isLanding={true}>
     <Svg
       src={import("../assets/faradgang_logo_big.svg?raw")}
