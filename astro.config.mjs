@@ -7,6 +7,6 @@ const { SITE, BASE } = loadEnv(import.meta.env.MODE, process.cwd(), "");
 export default defineConfig({
   site: SITE ?? "https://faradgang.berlin",
   base: BASE ?? "",
-  experimental: { assets: true, redirects: true },
+  experimental: { assets: true },
   redirects: { "/": `/${defaultLang}` },
 });
