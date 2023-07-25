@@ -1,6 +1,5 @@
 ---
 import Hero from "./Hero.astro";
-import ThemeSwitchButton from "./ThemeSwitcher/ThemeSwitchButton.astro";
 import "@fontsource/rubik/latin-700.css";
 
 import LanguagePicker from "../components/LanguagePicker.astro";
@@ -37,7 +36,6 @@ const BuildTimes = Object.fromEntries(
       </ul>
       <ul>
         <li><LanguagePicker /></li>
-        <li><ThemeSwitchButton /></li>
       </ul>
       <ul>
         <li>{translations("lastUpdate")}: {BuildTimes[language]}</li>

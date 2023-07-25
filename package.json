@@ -23,7 +23,6 @@
   "devDependencies": {
     "@jasikpark/astro-svg-loader": "^0.1.0",
     "@typescript-eslint/parser": "^6.2.0",
-    "astro-themes": "^0.2.4",
     "eslint": "^8.45.0",
     "eslint-plugin-astro": "^0.27.2",
     "eslint-plugin-jsx-a11y": "^6.7.1"
