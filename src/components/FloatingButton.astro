@@ -20,14 +20,20 @@ const { href, text } = Astro.props;
     right: 10vw;
   }
 
+  .floating_menu a {
+    text-decoration: none;
+  }
+
   .floating_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: rgb(var(--accent));
     color: rgb(var(--background-color));
     width: calc(6rem + 6vw);
     height: calc(6rem + 6vw);
     border-radius: 50%;
     font-size: calc(1.5rem + 2vw);
-    text-align: center;
     font-weight: bold;
     rotate: 15deg;
     border: 2px solid black;
