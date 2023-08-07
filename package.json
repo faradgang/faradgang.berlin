@@ -12,8 +12,8 @@
     "deploy": "source .env && npm run build && scp -prq $SOURCE/. $REMOTE_USER@$REMOTE_HOST:$TARGET"
   },
   "dependencies": {
-    "@fontsource/rubik": "^5.0.5",
-    "astro": "^2.9.6"
+    "@fontsource/rubik": "^5.0.8",
+    "astro": "^2.10.1"
   },
   "devDependencies": {
     "@jasikpark/astro-svg-loader": "^0.1.0",
