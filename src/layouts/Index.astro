@@ -1,18 +1,11 @@
 ---
 import Layout from "./Layout.astro";
 import Svg from "@jasikpark/astro-svg-loader";
-import FloatingButton from "../components/FloatingButton.astro";
 import AlternatingContainer from "../components/AlternatingContainer.astro";
 import Hero from "../components/Hero.astro";
 import ContentCard from "../components/ContentCard.astro";
 import ContentContainer from "../components/ContentContainer.astro";
-
 import type { MarkdownLayoutProps } from "astro";
-import { getLangFromUrl, useTranslations, localizedUrl } from "../i18n/utils";
-
-const language = getLangFromUrl(Astro.url);
-const translations = useTranslations(language);
-const helpUrl = localizedUrl("help", language);
 
 const { compiledContent, headings } = Astro.props as MarkdownLayoutProps<{}>;
 
@@ -23,21 +16,20 @@ const contentWithoutHeadings = splitByHeadings.map((content) =>
 ---
 
 <script>
-  const target = document.getElementById("scrollingBackground");
-  const { scrollingElement } = document;
-
-  function scrollBackground(scrollingElement: Element, target: HTMLElement) {
-    target.style.top = `${-0.2 * scrollingElement.scrollTop}px`;
+  function scrollElement(element: HTMLElement) {
+    const { scrollingElement } = document;
+    if (scrollingElement)
+      element.style.top = `${-0.2 * scrollingElement.scrollTop}px`;
   }
+  const target = document.getElementById("scrollingBackground");
 
-  if (target && scrollingElement) {
-    document.body.onscroll = () => scrollBackground(scrollingElement, target);
-    scrollBackground(scrollingElement, target);
+  if (target) {
+    window.addEventListener("scroll", () => scrollElement(target));
+    scrollElement(target);
   }
 </script>
 
 <Layout title="Faradgang Berlin e.V.">
-  <FloatingButton text={translations("nav.help")} href={helpUrl} />
   <Hero isLanding={true}>
     <Svg
       src={import("../assets/faradgang_logo_big.svg?raw")}

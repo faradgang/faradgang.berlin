@@ -1,0 +1,85 @@
+---
+import { getLangFromUrl, useTranslations, localizedUrl } from "../i18n/utils";
+import { languages } from "../i18n/ui";
+
+const language = getLangFromUrl(Astro.url);
+const translations = useTranslations(language);
+const mainUrl = localizedUrl("", language);
+const helpUrl = localizedUrl("help", language);
+---
+
+<header>
+  <div id="nav-container">
+    <nav>
+      <ul>
+        <li><a class="gradient-text" href={mainUrl}>Faradgang Berlin</a></li>
+        <li><a href={helpUrl}>{translations("nav.help")}</a></li>
+      </ul>
+    </nav>
+    <ul id="languageSelection">
+      {
+        languages.map((lang) => (
+          <li>
+            <a href={`/${lang}`}>{useTranslations(lang)("name")}</a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</header>
+
+<style>
+  header {
+    position: sticky;
+    top: 0;
+    background-color: rgba(var(--background-color), 0.75);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* display: none; */
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: calc(16px + 0.5vw);
+  }
+
+  #nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+    max-width: 60rem;
+    width: 100%;
+    padding: 1.5rem calc(8px + 1.5625vw);
+    align-items: center;
+  }
+
+  nav > ul {
+    display: flex;
+    gap: 1rem;
+    font-weight: bold;
+    flex-wrap: wrap;
+  }
+
+  #languageSelection {
+    font-size: calc(12px + 0.5vw);
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: end;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+  }
+
+  li {
+    padding: 0;
+    display: inline-block;
+  }
+</style>

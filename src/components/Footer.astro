@@ -2,7 +2,6 @@
 import Hero from "./Hero.astro";
 import "@fontsource/rubik/latin-700.css";
 
-import LanguagePicker from "../components/LanguagePicker.astro";
 import { getLangFromUrl, useTranslations, localizedUrl } from "../i18n/utils";
 import { languages } from "../i18n/ui";
 const language = getLangFromUrl(Astro.url);
@@ -19,7 +18,7 @@ const BuildTimes = Object.fromEntries(
       month: "short",
       day: "numeric",
     }),
-  ])
+  ]),
 );
 ---
 
@@ -33,9 +32,6 @@ const BuildTimes = Object.fromEntries(
         <li>
           <a href={privacyUrl}>{translations("nav.privacy-policy")}</a>
         </li>
-      </ul>
-      <ul>
-        <li><LanguagePicker /></li>
       </ul>
       <ul>
         <li>{translations("lastUpdate")}: {BuildTimes[language]}</li>
@@ -63,11 +59,6 @@ const BuildTimes = Object.fromEntries(
   a {
     font-weight: 700;
     font-size: larger;
-    text-decoration: none;
     font-family: "Rubik";
-  }
-
-  a:hover {
-    text-decoration: underline;
   }
 </style>

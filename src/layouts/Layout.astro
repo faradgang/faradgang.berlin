@@ -2,6 +2,7 @@
 import "@fontsource/rubik/latin-400.css";
 import "@fontsource/rubik/latin-700.css";
 import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
 
 export interface Props {
   title: string;
@@ -20,6 +21,7 @@ const { title } = Astro.props;
     <title>{title}</title>
   </head>
   <body>
+    <Header />
     <main>
       <slot />
     </main>
@@ -62,7 +64,6 @@ const { title } = Astro.props;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;
         align-items: center;
         font-size: calc(14px + 0.5vw);
         line-height: 1.6;
@@ -70,7 +71,8 @@ const { title } = Astro.props;
 
       .gradient-headlines > h1,
       .gradient-headlines > h2,
-      .gradient-headlines > h3 {
+      .gradient-headlines > h3,
+      .gradient-text {
         background-image: var(--accent-gradient);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -80,6 +82,11 @@ const { title } = Astro.props;
 
       a {
         color: var(--background-color);
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
       }
 
       h1 {

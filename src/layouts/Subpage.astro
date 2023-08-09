@@ -1,7 +1,6 @@
 ---
 import Hero from "../components/Hero.astro";
 import Layout from "./Layout.astro";
-import FloatingButton from "../components/FloatingButton.astro";
 import ContentContainer from "../components/ContentContainer.astro";
 import { getLangFromUrl, useTranslations, localizedUrl } from "../i18n/utils";
 const language = getLangFromUrl(Astro.url);
@@ -22,7 +21,6 @@ const { frontmatter } = Astro.props;
   <Hero>
     <h1 class="mainTitle">{frontmatter.title}</h1>
   </Hero>
-  <FloatingButton text={translations("nav.back")} href={backDestination} />
 
   <ContentContainer>
     <div class:list={[{ "gradient-headlines": frontmatter.gradientHeadlines }]}>
