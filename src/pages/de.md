@@ -36,4 +36,4 @@ Die offene Werkstatt steht selbstverständlich immer allen zur Verfügung.
 
 # Helfen
 
-Klicke auf den großen gelben Button oben rechts um Herauszufinden wie du uns durch Spenden, Sachleistungen oder deine Zeit unterstützen kannst.
+Du kannst uns durch Spenden, Sachleistungen oder deine Zeit unterstützen. Auch wenn du (noch) nicht so gut Schrauben kannst - wir freuen uns immer auf neue Gesichter und lernen gerne gemeinsam. [Auf unserer "Helfen" Seite findest du mehr Informationen.](/de/help)

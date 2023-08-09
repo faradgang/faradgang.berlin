@@ -36,4 +36,4 @@ The open workshop is, of course, available to everyone at all times.
 
 # How to Help
 
-Click on the large yellow button in the top right corner to find out how you can support us through donations, material contributions, or your time.
+You can support us with donations, contributions in kind or your time. Even if you are not (yet) very good at fixing bikes - we always look forward to meeting new faces and are happy to learn together. [See our "Help" page for more information.](/en/help)
