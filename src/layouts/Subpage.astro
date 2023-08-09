@@ -2,11 +2,6 @@
 import Hero from "../components/Hero.astro";
 import Layout from "./Layout.astro";
 import ContentContainer from "../components/ContentContainer.astro";
-import { getLangFromUrl, useTranslations, localizedUrl } from "../i18n/utils";
-const language = getLangFromUrl(Astro.url);
-const translations = useTranslations(language);
-const backDestination = localizedUrl("", language);
-
 import type { MarkdownLayoutProps } from "astro";
 
 type Props = MarkdownLayoutProps<{
