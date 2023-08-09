@@ -16,16 +16,14 @@ const contentWithoutHeadings = splitByHeadings.map((content) =>
 ---
 
 <script>
-  function scrollElement(element: HTMLElement) {
-    const { scrollingElement } = document;
-    if (scrollingElement)
-      element.style.top = `${-0.2 * scrollingElement.scrollTop}px`;
-  }
+  import { addScrollingHook } from "../utils";
   const target = document.getElementById("scrollingBackground");
-
   if (target) {
-    window.addEventListener("scroll", () => scrollElement(target));
-    scrollElement(target);
+    const scrollEffect = () => {
+      const scrollTop = document.scrollingElement?.scrollTop;
+      if (scrollTop) target.style.top = `${-0.2 * scrollTop}px`;
+    };
+    addScrollingHook(scrollEffect);
   }
 </script>
 

@@ -8,7 +8,33 @@ const mainUrl = localizedUrl("", language);
 const helpUrl = localizedUrl("help", language);
 ---
 
-<header>
+<script>
+  import { addScrollingHook } from "../utils";
+  const fadeStartPx = 200;
+  const fadeStopPx = 500;
+  const maxFadeOpacity = 0.85;
+  const header = document.getElementById("header");
+
+  if (header) {
+    const fadeIn = () => {
+      const scrollTop = document.scrollingElement?.scrollTop;
+      if (scrollTop) {
+        if (scrollTop < fadeStartPx) header.style.display = "none";
+        else {
+          const opacity =
+            scrollTop > fadeStopPx
+              ? maxFadeOpacity
+              : (scrollTop - fadeStartPx) / (fadeStopPx - fadeStartPx);
+          header.style.opacity = String(opacity);
+          header.style.display = "flex";
+        }
+      }
+    };
+    addScrollingHook(fadeIn);
+  }
+</script>
+
+<header id="header">
   <div id="nav-container">
     <nav>
       <ul>
@@ -32,11 +58,10 @@ const helpUrl = localizedUrl("help", language);
   header {
     position: sticky;
     top: 0;
-    background-color: rgba(var(--background-color), 0.75);
+    background-color: rgb(var(--background-color));
     margin: 0;
     padding: 0;
-    display: flex;
-    /* display: none; */
+    display: none;
     flex-direction: row;
     justify-content: center;
     align-items: center;
