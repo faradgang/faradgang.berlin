@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@fontsource/rubik": "^5.0.8",
-    "astro": "^2.10.1"
+    "astro": "^2.10.7"
   },
   "devDependencies": {
     "@jasikpark/astro-svg-loader": "^0.1.0",
