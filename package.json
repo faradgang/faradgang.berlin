@@ -12,7 +12,7 @@
     "deploy": "source .env && npm run build && scp -prq $SOURCE/. $REMOTE_USER@$REMOTE_HOST:$TARGET"
   },
   "dependencies": {
-    "@fontsource/rubik": "^5.0.8",
+    "@fontsource/rubik": "^5.0.9",
     "astro": "^2.10.7"
   },
   "devDependencies": {
