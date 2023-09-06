@@ -12,7 +12,7 @@ title: Impressum
 
 ## Kontakt
 
-- Email: info@faradgang.berlin
+- Email: mail@faradgang.berlin
 - Post: Faradgang Berlin e.V., ADRESSE
 
 ## Weitere Funktionen

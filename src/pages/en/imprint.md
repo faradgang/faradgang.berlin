@@ -12,7 +12,7 @@ title: Imprint
 
 ## Contact
 
-- Email: info@faradgang.berlin
+- Email: mail@faradgang.berlin
 - Post: Faradgang Berlin e.V., ADRESSE
 
 ## Additional roles

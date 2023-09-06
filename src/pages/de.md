@@ -14,7 +14,7 @@ Wir unterstützen Menschen, die aufgrund finanzieller, sozialer, gesundheitliche
 
 Wir sammeln gespendete Fahrräder und übergeben sie nach gemeinsamer Reparatur an unsere Gäste. Dabei schaffen wir einen Raum für Interaktion, Austausch und gemeinsames Lernen und ermöglichen die Erfahrung von Selbstwirksamkeit.
 
-Benötigst du oder jemand, den du kennst, ein Fahrrad? Kontaktiere uns unter <strong>info@faradgang.berlin</strong>! (Hinweis: Bitte beachte, dass es zu einer Wartezeit von mehreren Wochen kommen kann.)
+Benötigst du oder jemand, den du kennst, ein Fahrrad? Kontaktiere uns unter <strong>mail@faradgang.berlin</strong>! (Hinweis: Bitte beachte, dass es zu einer Wartezeit kommen kann.)
 
 ## Selbsthilfe Werkstatt
 

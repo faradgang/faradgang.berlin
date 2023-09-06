@@ -14,7 +14,7 @@ We support people who require assistance due to financial, social, health, or po
 
 We collect donated bicycles and, after repairing them together, distribute them to our guests. In doing so, we create a space for interaction, exchange, shared learning, and promote the experience of self-efficacy.
 
-Do you or someone you know need a bicycle? Contact us at **info@faradgang.berlin**! (Note: Please be aware that there may be a waiting period of several weeks.)
+Do you or someone you know need a bicycle? Contact us at **mail@faradgang.berlin**! (Note: Please be aware that there may be a waiting period)
 
 ## Self-Help Workshop
 
