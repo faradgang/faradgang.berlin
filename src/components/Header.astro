@@ -1,7 +1,7 @@
 ---
 import { getLangFromUrl, useTranslations, localizedUrl } from "../i18n/utils";
 import { languages } from "../i18n/ui";
-import Svg from "@jasikpark/astro-svg-loader";
+import logoSmall from "../assets/faradgang_logo_small.svg?raw";
 
 const language = getLangFromUrl(Astro.url);
 const translations = useTranslations(language);
@@ -37,12 +37,7 @@ const helpUrl = localizedUrl("help", language);
 <header id="header">
   <div id="nav-container">
     <div style="display: flex; gap: 1rem; align-items: center;">
-      <Svg
-        src={import("../assets/faradgang_logo_small.svg?raw")}
-        height="3rem"
-        width="auto"
-        style="color: white; display:inline-block; position: relative; top: -5px"
-      />
+      <div style="color: white; height: 3rem;" set:html={logoSmall} />
       <nav>
         <ul>
           <li>
