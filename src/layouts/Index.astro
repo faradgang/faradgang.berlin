@@ -6,6 +6,7 @@ import Hero from "../components/Hero.astro";
 import ContentCard from "../components/ContentCard.astro";
 import ContentContainer from "../components/ContentContainer.astro";
 import type { MarkdownLayoutProps } from "astro";
+import logoBig from "../assets/faradgang_logo_big.svg?raw";
 
 const { compiledContent, headings } = Astro.props as MarkdownLayoutProps<{}>;
 
@@ -29,10 +30,9 @@ const contentWithoutHeadings = splitByHeadings.map((content) =>
 
 <Layout title="Faradgang Berlin e.V.">
   <Hero isLanding={true}>
-    <Svg
-      src={import("../assets/faradgang_logo_big.svg?raw")}
-      aria-label="A childishly drawn bicycle"
-      width="100%"
+    <div
+      style="height:100%; width:100%; max-height: 30rem; max-width: 30rem"
+      set:html={logoBig}
     />
   </Hero>
 
