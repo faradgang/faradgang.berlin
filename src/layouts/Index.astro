@@ -7,6 +7,13 @@ import ContentCard from "../components/ContentCard.astro";
 import ContentContainer from "../components/ContentContainer.astro";
 import type { MarkdownLayoutProps } from "astro";
 import logoBig from "../assets/faradgang_logo_big.svg?raw";
+import wheel from "../assets/wheel.svg?raw";
+import bell from "../assets/bell.svg?raw";
+import cart from "../assets/cart.svg?raw";
+import backlight from "../assets/backlight.svg?raw";
+import pedal from "../assets/pedal.svg?raw";
+import dynamo from "../assets/dynamo.svg?raw";
+import brakes from "../assets/brakes.svg?raw";
 
 const { compiledContent, headings } = Astro.props as MarkdownLayoutProps<{}>;
 
@@ -33,53 +40,39 @@ const contentWithoutHeadings = splitByHeadings.map((content) =>
     <div
       style="height:100%; width:100%; max-height: 30rem; max-width: 30rem"
       set:html={logoBig}
+      aria-label="A childishly drawn bicycle, representing the faradgang logo."
     />
   </Hero>
 
   <ContentContainer>
     <div id="scrollingBackground">
-      <Svg
-        src={import("../assets/wheel.svg?raw")}
-        aria-label="Sketch of a bicycle wheel"
-        width="calc(5rem + 6vw)"
-        style="position:absolute;right:0%;top:7rem"
+      <div
+        style="width:calc(5rem + 6vw);position:absolute;right:0%;top:7rem"
+        set:html={wheel}
       />
-      <Svg
-        src={import("../assets/bell.svg?raw")}
-        aria-label="Sketch of a bicycle bell"
-        width="calc(2rem + 6vw)"
-        style="position:absolute;right:15%;top:25rem"
+      <div
+        style="width:calc(2rem + 6vw);position:absolute;right:15%;top:25rem"
+        set:html={bell}
       />
-      <Svg
-        src={import("../assets/cart.svg?raw")}
-        aria-label="Sketch of a bicycle cart"
-        width="calc(8rem + 6vw)"
-        style="position:absolute;left:5%;top:32rem"
+      <div
+        style="width:calc(8rem + 6vw);position:absolute;left:0%;top:32rem"
+        set:html={cart}
       />
-      <Svg
-        src={import("../assets/backlight.svg?raw")}
-        aria-label="Sketch of a bicycle backlight"
-        width="calc(2rem + 6vw)"
-        style="position:absolute;right:5%;top:62rem"
+      <div
+        style="width:calc(2rem + 6vw);position:absolute;right:5%;top:62rem"
+        set:html={backlight}
       />
-      <Svg
-        src={import("../assets/pedal.svg?raw")}
-        aria-label="Sketch of a bicycle pedal"
-        width="calc(8rem + 6vw)"
-        style="position:absolute;right:0%;top:75rem"
+      <div
+        style="width:calc(3rem + 6vw);position:absolute;left:0%;top:75rem"
+        set:html={pedal}
       />
-      <Svg
-        src={import("../assets/dynamo.svg?raw")}
-        aria-label="Sketch of a bicycle dynamo"
-        width="calc(2rem + 6vw)"
-        style="position:absolute;left:5%;top:100rem"
+      <div
+        style="width:calc(2rem + 6vw);position:absolute;left:15%;top:90rem"
+        set:html={dynamo}
       />
-      <Svg
-        src={import("../assets/brakes.svg?raw")}
-        aria-label="Sketch of bicycle brakes"
-        width="calc(5rem + 6vw)"
-        height="auto"
-        style="position:absolute;right:0%;top:130rem"
+      <div
+        style="width:calc(5rem + 6vw);position:absolute;right:0%;top:130rem"
+        set:html={brakes}
       />
     </div>
     <AlternatingContainer>
