@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@fontsource/rubik": "^5.0.15",
-    "astro": "^3.2.3"
+    "astro": "^3.3.0"
   },
   "devDependencies": {
     "@typescript-eslint/parser": "^6.7.5",
