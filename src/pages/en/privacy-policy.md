@@ -70,8 +70,8 @@ We would like to point out that data transmission over the internet (e.g., commu
 The responsible party for data processing on this website is:
 
 ```
-Christoph Hohnerlein
-admin@faradgang.berlin
+Christoph Omid Hohnerlein
+mail@faradgang.berlin
 ```
 
 The responsible party is the natural or legal person who, alone or jointly with others, decides on the purposes and means of processing personal data (e.g., names, email addresses, etc.).

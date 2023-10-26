@@ -3,18 +3,15 @@ layout: ../../layouts/Subpage.astro
 title: Impressum
 ---
 
-## Faradgang Berlin e.V.
+## Faradgang Berlin
 
-## Vorstand
+### Vorstand
 
-- Doppelspitze: Lina Fryszer & Christoph Omid Hohnerlein
-- Kassenwärtin: Franzsika Diehl
+- Lina Fryszer & Christoph Omid Hohnerlein (Doppelspitze)
+- Franziska Diehl (Kassenwärtin)
 
-## Kontakt
+### Kontakt
 
 - Email: mail@faradgang.berlin
-- Post: Faradgang Berlin e.V., ADRESSE
-
-## Weitere Funktionen
-
-- Datenschutzbeauftragter: Christoph Omid Hohnerlein
+- Mobil: 0163 3807021
+- Post: Faradgang Berlin e.V., Nogatstraße 31, 12051 Berlin

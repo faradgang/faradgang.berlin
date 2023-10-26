@@ -3,18 +3,15 @@ layout: ../../layouts/Subpage.astro
 title: Imprint
 ---
 
-## Faradgang Berlin e.V.
+## Faradgang Berlin
 
 ## Board
 
-- Dual leadership: Lina Fryszer & Christoph Omid Hohnerlein
-- Treasurer: Franzsika Diehl
+- Lina Fryszer & Christoph Omid Hohnerlein (dual leadership)
+- Franziska Diehl (treasurer)
 
 ## Contact
 
 - Email: mail@faradgang.berlin
-- Post: Faradgang Berlin e.V., ADRESSE
-
-## Additional roles
-
-- privacy officer: Christoph Omid Hohnerlein
+- Phone: 0163 3807021
+- Mail: Faradgang Berlin e.V., Nogatstraße 31, 12051 Berlin
