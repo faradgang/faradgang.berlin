@@ -27,6 +27,11 @@ const BuildTimes = Object.fromEntries(
     <div style="justify-content: center">
       <ul>
         <li>
+          <a href="https://www.instagram.com/faradgang_berlin/" target="_blank"
+            >Instagram</a
+          >
+        </li>
+        <li>
           <a href={imprintUrl}>{translations("nav.imprint")}</a>
         </li>
         <li>
@@ -49,11 +54,8 @@ const BuildTimes = Object.fromEntries(
     justify-content: center;
     align-items: center;
     color: rgb(var(--background-color));
-  }
-
-  li {
-    display: inline;
-    padding: 0 2vw;
+    gap: 2vw;
+    flex-wrap: wrap;
   }
 
   li > a {
