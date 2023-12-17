@@ -1,9 +1,18 @@
-<div class="content-container">
-  <slot />
+<div class="main-container">
+  <div class="content">
+    <slot />
+  </div>
 </div>
 
 <style>
-  .content-container {
+  .main-container {
+    width: 100%;
+    background-color: rgb(var(--background-color));
+    display: flex;
+    justify-content: center;
+  }
+
+  .content {
     max-width: 60rem;
     padding: 2rem calc(8px + 1.5625vw);
     padding-top: 0;
