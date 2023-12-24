@@ -1,0 +1,62 @@
+---
+import wheel from "../assets/wheel.svg?raw";
+import bell from "../assets/bell.svg?raw";
+import cart from "../assets/cart.svg?raw";
+import backlight from "../assets/backlight.svg?raw";
+import pedal from "../assets/pedal.svg?raw";
+import dynamo from "../assets/dynamo.svg?raw";
+import brakes from "../assets/brakes.svg?raw";
+---
+
+<script>
+  import { addScrollingHook } from "../utils";
+  const target = document.getElementById("scrollingBackground");
+  if (target) {
+    const scrollEffect = () => {
+      const scrollTop = document.scrollingElement?.scrollTop;
+      if (scrollTop) target.style.top = `${-0.2 * scrollTop}px`;
+    };
+    addScrollingHook(scrollEffect);
+  }
+</script>
+
+<div id="scrollingBackground">
+  <div
+    style="width:calc(5rem + 6vw);position:absolute;right:0%;top:7rem"
+    set:html={wheel}
+  />
+  <div
+    style="width:calc(2rem + 6vw);position:absolute;right:15%;top:25rem"
+    set:html={bell}
+  />
+  <div
+    style="width:calc(8rem + 6vw);position:absolute;left:0%;top:32rem"
+    set:html={cart}
+  />
+  <div
+    style="width:calc(2rem + 6vw);position:absolute;right:5%;top:62rem"
+    set:html={backlight}
+  />
+  <div
+    style="width:calc(3rem + 6vw);position:absolute;left:0%;top:75rem"
+    set:html={pedal}
+  />
+  <div
+    style="width:calc(2rem + 6vw);position:absolute;left:15%;top:90rem"
+    set:html={dynamo}
+  />
+  <div
+    style="width:calc(5rem + 6vw);position:absolute;right:0%;top:90rem"
+    set:html={brakes}
+  />
+</div>
+
+<style>
+  #scrollingBackground {
+    position: relative;
+    color: rgb(50, 50, 30);
+    width: 100%;
+    left: 0;
+    z-index: 1;
+  }
+</style>

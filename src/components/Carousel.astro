@@ -1,0 +1,46 @@
+---
+export interface Props {
+  images: { src: ImageMetadata; alt: string }[];
+}
+const { images } = Astro.props;
+import "@splidejs/splide/css";
+import { Image } from "astro:assets";
+---
+
+<div class="splide" role="group" aria-label="Splide Basic HTML Example">
+  <div class="splide__track">
+    <ul class="splide__list">
+      {
+        images.map((image) => (
+          <li class="splide__slide">
+            <Image
+              style={"width:100%; height:100%;"}
+              src={image.src}
+              alt={image.alt}
+            />
+          </li>
+        ))
+      }
+    </ul>
+    <!-- <button class="splide__toggle" type="button">
+      <span class="splide__toggle__play">▶︎</span>
+      <span class="splide__toggle__pause">⏸︎</span>
+    </button> -->
+  </div>
+</div>
+
+<script>
+  import Splide from "@splidejs/splide";
+  new Splide(".splide", {
+    type: "fade",
+    autoplay: true,
+    rewind: true,
+    speed: 5000,
+    interval: 6000,
+  }).mount();
+</script>
+
+<style>
+  .splide__toggle {
+  }
+</style>

@@ -1,38 +1,77 @@
 ---
 import Layout from "./Layout.astro";
-import AlternatingContainer from "../components/AlternatingContainer.astro";
 import Hero from "../components/Hero.astro";
 import ContentCard from "../components/ContentCard.astro";
-import ContentContainer from "../components/ContentContainer.astro";
-import type { MarkdownLayoutProps } from "astro";
 import logoBig from "../assets/faradgang_logo_big.svg?raw";
-import wheel from "../assets/wheel.svg?raw";
-import bell from "../assets/bell.svg?raw";
-import cart from "../assets/cart.svg?raw";
-import backlight from "../assets/backlight.svg?raw";
-import pedal from "../assets/pedal.svg?raw";
-import dynamo from "../assets/dynamo.svg?raw";
-import brakes from "../assets/brakes.svg?raw";
+import { Image } from "astro:assets";
+import ScrollingComponents from "../components/ScrollingComponents.astro";
+import pgardenImg from "../assets/pictures/pgaerten_sommerfest.jpg";
+import groupImgSummer from "../assets/pictures/gruppenbild_sommerfest.jpg";
+import groupImgStechlin from "../assets/pictures/gruppenbild_stechlin_gruendung.jpg";
+import werkstatt2Img from "../assets/pictures/werkstatt2.jpg";
 
-const { compiledContent, headings } = Astro.props as MarkdownLayoutProps<{}>;
+import { languages, type Language, defaultLang } from "../i18n/ui";
+import Carousel from "../components/Carousel.astro";
+import TwoColumns from "../components/TwoColumns.astro";
 
-const splitByHeadings = compiledContent().split(/(?=\n<h)/);
-const contentWithoutHeadings = splitByHeadings.map((content) =>
-  content.split(/(?=\d>\n)/)[1].slice(3),
-);
+export interface Props {
+  lang: string;
+}
+
+const language = (languages as string[]).includes(Astro.props.lang)
+  ? (Astro.props.lang as Language)
+  : defaultLang;
+type I18nText = Record<Language, string>;
+
+type Section = Record<string, I18nText>;
+
+const projects = {
+  heading: { de: "Unsere Projekte", en: "Our projects" },
+  leftHeading: { de: "Räder für alle", en: "Bikes for all" },
+  leftContent: {
+    de: `Wir sammeln gespendete Fahrräder und übergeben sie nach gemeinsamer Reparatur an unsere Gäste. Dabei schaffen wir einen Raum für Interaktion, Austausch und gemeinsames Lernen und ermöglichen die Erfahrung von Selbstwirksamkeit. Benötigst du oder jemand, den du kennst, ein Fahrrad? Schreib uns gerne eine Email an mail@faradgang.berlin ☺️`,
+    en: `We collect donated bicycles and, after repairing them together, distribute them to our guests. In doing so, we create a space for interaction, exchange, shared learning, and promote the experience of self-efficacy. Do you or someone you know need a bicycle? Contact us at mail@faradgang.berlin ☺️`,
+  },
+  rightHeading: { de: "Selbsthilfe Werkstatt", en: "Self-help workshop" },
+  rightContent: {
+    de: `Bei guten Wetter kannst du Freitags ab 16 Uhr in unserer offenen Werkstatt in den Jacobi Prinzessinengärten dein eigenes Fahrrad reparieren. Wir stehen dir mit Werkzeugen, einigen Ersatzteile sowie Rat und Tat zur Seite.`,
+    en: "If the weather is good you can repair your bicycle in our self-repair workshop, located inside the Jacobi Prizessinen gardens. We provide tools, some spare parts, and guidance to assist you.",
+  },
+  linkText: { de: "Standort", en: "Location" },
+} as const satisfies Section;
+
+const content = {
+  werWirSind: {
+    heading: { de: "Wer wir sind", en: "Who we are" },
+    content: {
+      de: "Faradgang Berlin e.V. ist eine gemeinnützige Organisation, die ehrenamtlich tätig ist und bedürftigen Menschen durch Mobilität ein Stück Selbstbestimmung, Freiheit und Lebensqualität ermöglichen möchte.",
+      en: "Faradgang Berlin e.V. is a non-profit organization that operates on a voluntary basis and aims to provide individuals in need with a sense of self-determination, freedom, and quality of life through mobility.",
+    },
+    imageAlt: { de: "", en: "" },
+  },
+  wasWirTun: {
+    heading: { de: "Was wir tun", en: "What we do" },
+    content: {
+      de: "Wir unterstützen Menschen, die aufgrund finanzieller, sozialer, gesundheitlicher oder politischer Umstände auf Hilfe angewiesen sind.",
+      en: "We support people who require assistance due to financial, social, health, or political circumstances.",
+    },
+  },
+} as const satisfies Record<string, Section>;
+
+const topCarousel = [
+  {
+    src: groupImgSummer,
+    alt: { de: "Gruppenbild mit Fahrrad", en: "Group picture with bike" },
+  },
+  {
+    src: groupImgStechlin,
+    alt: {
+      de: "Gruppenbild vor gepflanztem Baum",
+      en: "Group picture in front of nwely planted tree",
+    },
+  },
+] as const;
 ---
-
-<script>
-  import { addScrollingHook } from "../utils";
-  const target = document.getElementById("scrollingBackground");
-  if (target) {
-    const scrollEffect = () => {
-      const scrollTop = document.scrollingElement?.scrollTop;
-      if (scrollTop) target.style.top = `${-0.2 * scrollTop}px`;
-    };
-    addScrollingHook(scrollEffect);
-  }
-</script>
 
 <Layout title="Faradgang Berlin e.V.">
   <Hero isLanding={true}>
@@ -43,63 +82,63 @@ const contentWithoutHeadings = splitByHeadings.map((content) =>
     />
   </Hero>
 
-  <ContentContainer>
-    <div id="scrollingBackground">
-      <div
-        style="width:calc(5rem + 6vw);position:absolute;right:0%;top:7rem"
-        set:html={wheel}
-      />
-      <div
-        style="width:calc(2rem + 6vw);position:absolute;right:15%;top:25rem"
-        set:html={bell}
-      />
-      <div
-        style="width:calc(8rem + 6vw);position:absolute;left:0%;top:32rem"
-        set:html={cart}
-      />
-      <div
-        style="width:calc(2rem + 6vw);position:absolute;right:5%;top:62rem"
-        set:html={backlight}
-      />
-      <div
-        style="width:calc(3rem + 6vw);position:absolute;left:0%;top:75rem"
-        set:html={pedal}
-      />
-      <div
-        style="width:calc(2rem + 6vw);position:absolute;left:15%;top:90rem"
-        set:html={dynamo}
-      />
-      <div
-        style="width:calc(5rem + 6vw);position:absolute;right:0%;top:130rem"
-        set:html={brakes}
-      />
-    </div>
-    <AlternatingContainer>
-      {
-        contentWithoutHeadings.map((content, idx) => (
-          <ContentCard>
-            {headings[idx].depth === 1 ? (
-              <h1 slot="header" id={headings[idx].slug}>
-                {headings[idx].text}
-              </h1>
-            ) : (
-              <h2 slot="header" id={headings[idx].slug}>
-                {headings[idx].text}
-              </h2>
-            )}
-            <div set:html={content} />
-          </ContentCard>
-        ))
-      }
-    </AlternatingContainer>
-  </ContentContainer>
-</Layout>
+  <ScrollingComponents />
+  <>
+    <ContentCard darkBackground>
+      <TwoColumns>
+        <div class="gradient-headlines">
+          <h2>{content.werWirSind.heading[language]}</h2>
+          <p>{content.werWirSind.content[language]}</p>
+        </div>
+        <div>
+          <Carousel
+            images={topCarousel.map((item) => ({
+              src: item.src,
+              alt: item.alt[language],
+            }))}
+          />
+        </div>
+      </TwoColumns>
+    </ContentCard>
 
-<style>
-  #scrollingBackground {
-    position: relative;
-    color: rgb(50, 50, 30);
-    width: 100%;
-    left: 0;
-  }
-</style>
+    <ContentCard>
+      <h2>{content.wasWirTun.heading[language]}</h2>
+      <p>{content.wasWirTun.content[language]}</p>
+    </ContentCard>
+
+    <ContentCard darkBackground>
+      <h2>{projects.heading[language]}</h2>
+
+      <TwoColumns>
+        <div class="gradient-headlines">
+          <h3>{projects.leftHeading[language]}</h3>
+          <p>{projects.leftContent[language]}</p>
+          <div>
+            <Image
+              style={"width:100%; height:100%;"}
+              src={werkstatt2Img}
+              alt={content.werWirSind.imageAlt[language]}
+            />
+          </div>
+        </div>
+
+        <div>
+          <div class="gradient-headlines">
+            <h3>{projects.rightHeading[language]}</h3>
+            <Image
+              style={"width:100%; height:100%;"}
+              src={pgardenImg}
+              alt={content.werWirSind.imageAlt[language]}
+            />
+            <p>{projects.rightContent[language]}</p>
+            <a
+              href="https://www.openstreetmap.org/node/9187753963#map=19/52.46946/13.42950"
+              target="_blank"
+              rel="noopener noreferrer">{projects.linkText[language]}</a
+            >
+          </div>
+        </div>
+      </TwoColumns>
+    </ContentCard>
+  </>
+</Layout>

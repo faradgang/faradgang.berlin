@@ -1,0 +1,21 @@
+<div class="responsive-two-columns">
+  <slot />
+</div>
+
+<style is:global>
+  .responsive-two-columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4%;
+  }
+
+  .responsive-two-columns > * {
+    width: 100%;
+  }
+
+  @media (min-width: 768px) {
+    .responsive-two-columns > * {
+      width: 48%;
+    }
+  }
+</style>

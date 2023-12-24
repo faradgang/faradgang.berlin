@@ -1,8 +1,8 @@
 ---
 import Hero from "../components/Hero.astro";
 import Layout from "./Layout.astro";
-import ContentContainer from "../components/ContentContainer.astro";
 import type { MarkdownLayoutProps } from "astro";
+import ContentCard from "../components/ContentCard.astro";
 
 type Props = MarkdownLayoutProps<{
   title: string;
@@ -17,11 +17,11 @@ const { frontmatter } = Astro.props;
     <h1 class="mainTitle">{frontmatter.title}</h1>
   </Hero>
 
-  <ContentContainer>
+  <ContentCard>
     <div class:list={[{ "gradient-headlines": frontmatter.gradientHeadlines }]}>
       <slot />
     </div>
-  </ContentContainer>
+  </ContentCard>
 </Layout>
 
 <style>

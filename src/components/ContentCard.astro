@@ -1,17 +1,36 @@
-<div class="contentCard gradient-headlines">
-  <slot name="header" />
-  <div class="font-changing text-content">
+---
+export interface Props {
+  darkBackground?: boolean;
+}
+const { darkBackground = false } = Astro.props;
+---
+
+<section class=`contentCard ${darkBackground ? "darkBackground" : ""}`>
+  <div class="content gradient-headlines">
     <slot />
   </div>
-</div>
+</section>
 
 <style>
   .contentCard {
-    line-height: 1.6;
-    margin-top: 10vh;
+    /* margin: 10rem; */
+    width: 100%;
+    justify-content: center;
+    display: flex;
   }
 
   .contentCard strong {
     color: rgb(var(--accent));
+  }
+
+  .darkBackground {
+    background-color: rgb(var(--background-color));
+    color: rgb(var(--text-bright));
+  }
+
+  /* for padding formula see https://matthewjamestaylor.com/responsive-padding */
+  .content {
+    max-width: 60rem;
+    padding: calc(8px + 1.5625vw);
   }
 </style>
