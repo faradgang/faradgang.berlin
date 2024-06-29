@@ -85,6 +85,10 @@ const content = {
       de: "Als gemeinnützige Organisation sind wir von der Körperschaftssteuer befreit, Geldspenden an uns sind steuerlich absetzbar. Für Beträge unter 200 Euro genügt dabei der Überweisungsbeleg. Für größere Spenden senden wir dir gerne eine Spendenbescheinigung zu. Gib dazu entweder deine vollständige Adresse im Verwendungszweck der Überweisung an oder schicke uns eine E-Mail an mail@faradgang.berlin.",
       en: "Monetary donations to us are tax-deductible, because we are a registered non-profit organization. The bank transfer receipt suffices as proof of donation to the tax office for amounts under 200 Euros. We can issue a donation receipt (Zuwendungsbescheinigung) for larger donations. Please either add your full address as payment subject or send us an email to mail@faradgang.berlin.",
     },
+    konto: {
+      de: "Empfänger: Faradgang Berlin e.V.\nIBAN: DE78 4306 0967 1332 0556 00\nBIC: GENODEM1GLS\nBank: GLS Gemeinschaftsbank",
+      en: "Recipient: Faradgang Berlin e.V.\nIBAN: DE78 4306 0967 1332 0556 00\nBIC: GENODEM1GLS\nBank: GLS Gemeinschaftsbank",
+    },
   },
 } as const satisfies Record<string, Section>;
 
@@ -187,6 +191,13 @@ const topCarousel = [
         </div>
         <div>
           <h3>{content.spenden.geldspendeHeading[language]}</h3>
+          <ul>
+            {
+              content.spenden.konto[language]
+                .split("\n")
+                .map((line) => <li>{line}</li>)
+            }
+          </ul>
           <p>{content.spenden.geldspende[language]}</p>
         </div>
       </TwoColumns>
