@@ -12,12 +12,12 @@
     "deploy": "source .env && npm run build && scp -prq $SOURCE/. $REMOTE_USER@$REMOTE_HOST:$TARGET"
   },
   "dependencies": {
-    "@fontsource/rubik": "^5.0.22",
+    "@fontsource/rubik": "^5.1.0",
     "@splidejs/splide": "^4.1.4",
     "astro": "^4.15.4"
   },
   "devDependencies": {
-    "@typescript-eslint/parser": "^8.4.0",
+    "@typescript-eslint/parser": "^8.5.0",
     "eslint": "^9.10.0",
     "eslint-plugin-astro": "^1.2.3",
     "eslint-plugin-jsx-a11y": "^6.10.0"
