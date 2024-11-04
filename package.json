@@ -14,7 +14,7 @@
   "dependencies": {
     "@fontsource/rubik": "^5.1.0",
     "@splidejs/splide": "^4.1.4",
-    "astro": "^4.16.7"
+    "astro": "^4.16.8"
   },
   "devDependencies": {
     "@typescript-eslint/parser": "^8.11.0",
