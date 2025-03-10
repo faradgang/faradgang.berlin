@@ -25,7 +25,7 @@ jobs:
           cache: "pnpm"
       - run: pnpm install
       - name: Build
-        run: SITE=https://chohner.github.io BASE=/faradgang.berlin pnpm run build
+        run: SITE=https://faradgang.github.io BASE=/faradgang.berlin pnpm run build
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload static files as artifact
