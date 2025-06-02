@@ -14,7 +14,7 @@
   "dependencies": {
     "@fontsource/rubik": "^5.2.5",
     "@splidejs/splide": "^4.1.4",
-    "astro": "^5.8.0",
+    "astro": "^5.8.1",
     "sharp": "^0.34.2"
   },
   "devDependencies": {
