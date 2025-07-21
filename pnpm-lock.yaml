@@ -15,8 +15,8 @@ importers:
         specifier: ^4.1.4
         version: 4.1.4
       astro:
-        specifier: ^5.11.1
-        version: 5.11.1(@types/node@24.0.13)(rollup@4.45.0)(typescript@5.8.2)
+        specifier: ^5.12.1
+        version: 5.12.1(@types/node@24.0.13)(rollup@4.45.0)(typescript@5.8.2)
       sharp:
         specifier: ^0.34.3
         version: 0.34.3
@@ -34,8 +34,8 @@ importers:
         specifier: ^6.10.2
         version: 6.10.2(eslint@9.31.0)
       vite:
-        specifier: ^7.0.4
-        version: 7.0.4(@types/node@24.0.13)
+        specifier: ^7.0.5
+        version: 7.0.5(@types/node@24.0.13)
 
 packages:
 
@@ -45,8 +45,8 @@ packages:
   '@astrojs/internal-helpers@0.6.1':
     resolution: {integrity: sha512-l5Pqf6uZu31aG+3Lv8nl/3s4DbUzdlxTWDof4pEpto6GUJNhhCbelVi9dEyurOVyqaelwmS9oSyOWOENSfgo9A==}
 
-  '@astrojs/markdown-remark@6.3.2':
-    resolution: {integrity: sha512-bO35JbWpVvyKRl7cmSJD822e8YA8ThR/YbUsciWNA7yTcqpIAL2hJDToWP5KcZBWxGT6IOdOkHSXARSNZc4l/Q==}
+  '@astrojs/markdown-remark@6.3.3':
+    resolution: {integrity: sha512-DDRtD1sPvAuA7ms2btc9A7/7DApKqgLMNrE6kh5tmkfy8utD0Z738gqd3p5aViYYdUtHIyEJ1X4mCMxfCfu15w==}
 
   '@astrojs/prism@3.3.0':
     resolution: {integrity: sha512-q8VwfU/fDZNoDOf+r7jUnMC2//H2l0TuQ6FkGJL8vD8nw/q5KiL3DS1KKBI3QhI9UQhpJ5dc7AtqfbXWuOgLCQ==}
@@ -831,8 +831,8 @@ packages:
     resolution: {integrity: sha512-JepyLROIad6f44uyqMF6HKE2QbunNzp3mYKRcPoDGt0QkxXmH222FAFC64WTyQu2Kg8NNEXHTN/sWuUId9sSxw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  astro@5.11.1:
-    resolution: {integrity: sha512-32dpUh0tXSV/FR2q2/z7LOA6IXl7RqET9J51IA0pPSSi3exhRP3EOSQGjBq10DzXT7VrvplDrFqwfiiWBS8oYA==}
+  astro@5.12.1:
+    resolution: {integrity: sha512-/gH9cLIp6UNdbJO1FPBVN/Ea+1I9hJdQoLJKYUsXIRIfHcyF/3NCg0QVDJGw1oWkyQT6x6poQsnbgY9UXitjiw==}
     engines: {node: 18.20.8 || ^20.3.0 || >=22.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -2375,8 +2375,8 @@ packages:
       yaml:
         optional: true
 
-  vite@7.0.4:
-    resolution: {integrity: sha512-SkaSguuS7nnmV7mfJ8l81JGBFV7Gvzp8IzgE8A8t23+AxuNX61Q5H1Tpz5efduSN7NHC8nQXD3sKQKZAu5mNEA==}
+  vite@7.0.5:
+    resolution: {integrity: sha512-1mncVwJxy2C9ThLwz0+2GKZyEXuC3MyWtAAlNftlZZXZDP3AJt5FmwcMit/IGGaNZ8ZOB2BNO/HFUB+CpN0NQw==}
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
     peerDependencies:
@@ -2515,7 +2515,7 @@ snapshots:
 
   '@astrojs/internal-helpers@0.6.1': {}
 
-  '@astrojs/markdown-remark@6.3.2':
+  '@astrojs/markdown-remark@6.3.3':
     dependencies:
       '@astrojs/internal-helpers': 0.6.1
       '@astrojs/prism': 3.3.0
@@ -3192,11 +3192,11 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  astro@5.11.1(@types/node@24.0.13)(rollup@4.45.0)(typescript@5.8.2):
+  astro@5.12.1(@types/node@24.0.13)(rollup@4.45.0)(typescript@5.8.2):
     dependencies:
       '@astrojs/compiler': 2.12.2
       '@astrojs/internal-helpers': 0.6.1
-      '@astrojs/markdown-remark': 6.3.2
+      '@astrojs/markdown-remark': 6.3.3
       '@astrojs/telemetry': 3.3.0
       '@capsizecss/unpack': 2.4.0
       '@oslojs/encoding': 1.1.0
@@ -3239,6 +3239,7 @@ snapshots:
       rehype: 13.0.2
       semver: 7.7.2
       shiki: 3.8.0
+      smol-toml: 1.4.1
       tinyexec: 0.3.2
       tinyglobby: 0.2.14
       tsconfck: 3.1.6(typescript@5.8.2)
@@ -5285,7 +5286,7 @@ snapshots:
       '@types/node': 24.0.13
       fsevents: 2.3.3
 
-  vite@7.0.4(@types/node@24.0.13):
+  vite@7.0.5(@types/node@24.0.13):
     dependencies:
       esbuild: 0.25.6
       fdir: 6.4.6(picomatch@4.0.2)
