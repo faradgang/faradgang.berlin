@@ -15,7 +15,7 @@
     "@fontsource/rubik": "^5.2.8",
     "@splidejs/splide": "^4.1.4",
     "astro": "^5.15.3",
-    "sharp": "^0.34.4"
+    "sharp": "^0.34.5"
   },
   "devDependencies": {
     "@typescript-eslint/parser": "^8.46.2",
