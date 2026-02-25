@@ -9,7 +9,7 @@
     "astro": "astro",
     "typecheck": "astro check && tsc --noEmit",
     "lint": "oxlint",
-    "deploy": "source .env && npm run build && scp -prq $SOURCE/. $REMOTE_USER@$REMOTE_HOST:$TARGET"
+    "deploy": "./deploy.sh"
   },
   "dependencies": {
     "@fontsource/rubik": "^5.2.8",
