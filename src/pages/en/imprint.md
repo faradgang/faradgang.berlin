@@ -8,7 +8,7 @@ title: Imprint
 ## Board
 
 - Lina Fryszer & Christoph Omid Hohnerlein (dual leadership)
-- Franziska Diehl (treasurer)
+- Georg Bessinger (treasurer)
 
 ## Contact
 

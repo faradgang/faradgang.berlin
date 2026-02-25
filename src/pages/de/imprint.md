@@ -8,7 +8,7 @@ title: Impressum
 ### Vorstand
 
 - Lina Fryszer & Christoph Omid Hohnerlein (Doppelspitze)
-- Franziska Diehl (Kassenwärtin)
+- Georg Bessinger (Kassenwärtin)
 
 ### Kontakt
 
