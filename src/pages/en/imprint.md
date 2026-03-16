@@ -14,4 +14,4 @@ title: Imprint
 
 - Email: mail@faradgang.berlin
 - Phone: 0163 3807021
-- Mail: Faradgang Berlin e.V., Nogatstraße 31, 12051 Berlin
+- Mail: Faradgang Berlin e.V., Gneisenaustr. 52, 10961 Berlin

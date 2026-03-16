@@ -14,4 +14,4 @@ title: Impressum
 
 - Email: mail@faradgang.berlin
 - Mobil: 0163 3807021
-- Post: Faradgang Berlin e.V., Nogatstraße 31, 12051 Berlin
+- Post: Faradgang Berlin e.V., Gneisenaustr. 52, 10961 Berlin
