@@ -7,5 +7,8 @@ const { SITE, BASE } = loadEnv(import.meta.env.MODE, process.cwd(), "");
 export default defineConfig({
   site: SITE ?? "https://faradgang.berlin",
   base: BASE ?? "",
-  redirects: { "/": `/${defaultLang}` },
+  redirects: {
+    "/": `/${defaultLang}`,
+    "/link/werkstatt": "https://www.reparatur-initiativen.de/faradgang-e-v",
+  },
 });
