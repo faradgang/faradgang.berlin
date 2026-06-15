@@ -15,7 +15,7 @@
     "@fontsource/rubik": "^5.2.8",
     "@splidejs/splide": "^4.1.4",
     "astro": "^6.4.4",
-    "sharp": "^0.34.5"
+    "sharp": "^0.35.1"
   },
   "devDependencies": {
     "oxlint": "^1.68.0",
