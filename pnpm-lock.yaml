@@ -25,7 +25,7 @@ importers:
         specifier: ^1.69.0
         version: 1.69.0
       vite:
-        specifier: ^7
+        specifier: ^7.3.5
         version: 7.3.5
 
 packages:
